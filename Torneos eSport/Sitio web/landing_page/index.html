@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="oscuro">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Torneos - VirtualNest</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <header class="barra-navegacion">
+    <div class="contenedor-navegacion">
+      <div class="logo-contenedor">
+        <img id="fot1" src="img/PNG ICONO BLANCO.png" alt="Icono VirtualNest" />
+        <h1 class="logo"><a href="index.html">VirtualNest</a></h1>
+      </div>
+      <button id="boton-menu" class="boton-hamburguesa">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul class="lista-navegacion">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="#nosotros">Sobre Nosotros</a></li>
+  <li><a href="#torneos">Torneos</a></li>
+  <li><a href="#funcionamiento">Cómo Funciona</a></li>
+  <li><a href="#opiniones">Testimonios</a></li>
+  <li><a href="#contacto">Contacto</a></li>
+
+  <!-- Submenú Cuenta -->
+  <li class="submenu">
+    <a href="#">Cuenta <i class="fas fa-caret-down"></i></a>
+    <ul class="submenu-lista">
+      <li><a href="login.html">Iniciar sesión</a></li><!--rediriccionar a otra pagina con base de datos asociada-->
+      <li><a href="registro.html">Registrarse</a></li>
+    </ul>
+  </li>
+
+  <li>
+    <button id="boton-tema" class="modo-tema">
+      <i class="fas fa-adjust"></i>
+    </button>
+  </li>
+</ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenido-pagina tarjeta-principal">
+  <section class="seccion-torneos">
+    <h1>Torneos Actuales</h1>
+    <p>Explora los torneos en curso y únete a la competencia.</p>
+
+    <!-- Buscador -->
+    <div class="buscador-torneos">
+      <input type="text" placeholder="Buscar torneo por nombre o juego..." />
+      <button class="boton"><i class="fas fa-search"></i> Buscar</button>
+    </div>
+
+    <!-- Filtro -->
+    <div class="filtro-torneos">
+      <label for="filtro">Filtrar por categoría:</label>
+      <select id="filtro">
+        <option>Todos</option>
+        <option>Shooter</option>
+        <option>MOBA</option>
+        <option>Battle Royale</option>
+        <option>Deportes</option>
+      </select>
+    </div>
+
+    <!-- Tarjetas ejemplo -->
+    <div class="tarjetas-torneos-mini">
+      <div class="tarjeta-mini">
+        <h3><i class="fas fa-fire"></i> Arena Pro</h3>
+        <p>Competencia semanal de FPS</p>
+      </div>
+      <div class="tarjeta-mini">
+        <h3><i class="fas fa-dragon"></i> League Clash</h3>
+        <p>Torneo 5v5 MOBA estratégico</p>
+      </div>
+      <div class="tarjeta-mini">
+        <h3><i class="fas fa-futbol"></i> Fútbol eCup</h3>
+        <p>Duelo deportivo online 1v1</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <section class="seccion-principal">
+    <div class="contenido-principal">
+      <h1>Compite y Gana</h1>
+      <p>Participa en torneos emocionantes con grandes premios.</p>
+      <a href="#torneos" class="boton">Participar</a>
+    </div>
+  </section>
+
+  <section id="nosotros" class="seccion">
+    <h2>Sobre Nosotros</h2>
+    <p>VirtualNest es una comunidad dedicada a organizar los mejores torneos online.</p>
+    <ul class="lista-beneficios">
+      <li>Organización de torneos</li>
+      <li>Transmisión en vivo</li>
+      <li>Soporte técnico</li>
+      <li>Personalización de eventos</li>
+    </ul>
+  </section>
+
+<section id="torneos" class="seccion oscuro">
+  <h2>Próximos Torneos</h2>
+  <div class="tarjetas-torneos">
+    <div class="tarjeta">
+      <img src="img/torneo1.jpg" alt="Torneo 1" />
+      <h3>Torneo de Verano</h3>
+      <p>Prepárate para competir en el torneo más esperado del año.</p>
+      <a href="https://ejemplo.com/torneo-verano" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
+    </div>
+    <div class="tarjeta">
+      <img src="img/torneo2.jpg" alt="Torneo 2" />
+      <h3>Desafío Épico</h3>
+      <p>Reúne a tu equipo y demuestra tus habilidades.</p>
+      <a href="https://ejemplo.com/desafio-epico" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
+    </div>
+    <div class="tarjeta">
+      <img src="img/torneo3.jpg" alt="Torneo 3" />
+      <h3>Batalla Rápida</h3>
+      <p>Un torneo relámpago con premios instantáneos.</p>
+      <a href="https://ejemplo.com/batalla-rapida" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
+    </div>
+  </div>
+  <div class="ver-mas-torneos">
+  <a class="boton" href="https://example.com/mas-torneos" target="_blank" rel="noopener">
+    Ver más torneos
+  </a>
+</div>
+</section>
+
+  <section id="funcionamiento" class="seccion">
+    <h2>Cómo Funciona</h2>
+    <div class="pasos">
+      <div><img src="img/paso1.png" alt="Paso 1" />
+        <p>1. Regístrate</p>
+      </div>
+      <div><img src="img/paso2.png" alt="Paso 2" />
+        <p>2. Elige un torneo</p>
+      </div>
+      <div><img src="img/paso3.png" alt="Paso 3" />
+        <p>3. Compite</p>
+      </div>
+      <div><img src="img/paso4.png" alt="Paso 4" />
+        <p>4. Gana premios</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="opiniones" class="seccion oscuro">
+    <h2>Testimonios</h2>
+    <blockquote>
+      “VirtualNest me permitió competir con jugadores de todo el mundo. ¡Increíble experiencia!”
+      <span>– GamerX</span>
+    </blockquote>
+  </section>
+
+  <section id="faq" class="seccion">
+    <h2>Preguntas Frecuentes</h2>
+    <details>
+      <summary>¿Cómo me inscribo a un torneo?</summary>
+      <p>Haz clic en el botón "Inscribirse" del torneo que te interesa.</p>
+    </details>
+    <details>
+      <summary>¿Es gratis participar?</summary>
+      <p>Algunos torneos son gratuitos, otros requieren inscripción con pago.</p>
+    </details>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas? Contáctanos.</p>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VirtualNest. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

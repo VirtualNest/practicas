@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header class="barra-navegacion">
+    <div class="contenedor-navegacion">
+      <div class="logo-contenedor">
+        <img id="fot1" src="img/PNG ICONO BLANCO.png" alt="Icono VirtualNest" />
+        <h1 class="logo"><a href="index.html">VirtualNest</a></h1>
+      </div>
+      <button id="boton-menu" class="boton-hamburguesa">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul class="lista-navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#torneos">Torneos</a></li>
+          <li><a href="#funcionamiento">Cómo Funciona</a></li>
+          <li><a href="#opiniones">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li class="submenu">
+            <a href="#">Cuenta <i class="fas fa-caret-down"></i></a>
+            <ul class="submenu-lista">
+              <li><a href="login.html">Iniciar sesión</a></li>
+              <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+          </li>
+          <li>
+            <button id="boton-tema" class="modo-tema">
+              <i class="fas fa-adjust"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="centrado-auth">
+    <div class="formulario-auth">
+      <h2>Iniciar Sesión</h2>
+      <form id="form-login">
+        <input type="email" placeholder="Correo Electrónico" required />
+        <input type="password" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <div class="error" id="error-message"></div>
+      <div class="enlace">
+        <a href="registro.html">¿No tienes cuenta? Regístrate</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 VirtualNest. Todos los derechos reservados.</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
