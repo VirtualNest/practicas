@@ -220,6 +220,7 @@ body {
 
 /* ========== BOTONES ========== */
 .boton {
+  margin: 30px;
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background: #00ffd9;
