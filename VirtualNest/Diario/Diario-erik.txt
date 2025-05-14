@@ -1,2 +1,79 @@
 13/05/2025 
 Hoy he revisado la pagina web y he trabajado un poco en el html y el css ademas de ver un video que es como un curso sobre como utilizar el github ya que es la primera vez que lo uso
+14/05/2025
+Hoy he seguido trbajando en el código de la pagina web además de haber añadido el boostrap
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtualnest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-5">
+
+        <!-- Título y descripción -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">No buscamos simplemente cumplir expectativas, aspiramos a redefinirlas</h1>
+            <p class="lead">
+
+                En VirtualNest elevamos cada proyecto digital con dedicación excepcional. Nuestros servicios web,
+                desarrollo de aplicaciones móvil, marketing digital, SEO y hosting destacan por su calidad meticulosa y
+                enfoque personalizado.
+                Con un modelo único de pago por resultados, convertimos tu visión empresarial en soluciones digitales
+                que no solo funcionan eficientemente, sino que afianzan y aumentan tu número de clientes, generando un
+                impacto real y medible para tu negocio.
+            </p>
+        </div>
+
+        <!-- Línea -->
+        <hr>
+
+        <!-- Sección de contenido en dos columnas -->
+        <div class="row align-items-center mt-5">
+            <!-- Columna con video -->
+            <div class="col-md-6">
+                <video autoplay loop muted class="img-fluid">
+                    <source src="VR empresa.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Columna con texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Soluciones digitales completas</h3>
+                <p>
+                    Potenciamos tu presencia online con un enfoque integral que abarca todas sus necesidades digitales.
+                    Desde sitios web de alto impacto y aplicaciones móviles innovadoras hasta SEO estratégico y hosting
+                    seguro, nuestros servicios trabajan en perfecta sinergia para maximizar resultados.
+                </p>
+                <ul>
+                    <li><strong>Tecnología de vanguardia</strong> que impulsa tu competitividad</li>
+                    <li><strong>Enfoque centrado</strong> en resultados medibles y tangibles</li>
+                    <li><strong>Soporte personalizado continuo</strong> sin costes adicionales</li>
+                </ul>
+                <a href="#" class="btn btn-primary mt-3">Descubra nuestras soluciones</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-">
+      <div class="p-3 border bg-light">Contenedor 1</div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 border bg-light">Contenedor 2</div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 border bg-light">Contenedor 3</div>
+    </div>
+  </div>
+</div>  
+</body>
+</html>
