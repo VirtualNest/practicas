@@ -10,22 +10,23 @@
 
 header {
     background: 
-        linear-gradient(
-            150deg,
-            rgba(204, 66, 225, 0.7) 0%,
-            rgba(77, 34, 150, 0.8) 16%,
-            rgba(65, 32, 137, 0.8) 33%,
-            rgba(47, 23, 99, 0.8) 51%,
-            rgba(31, 13, 65, 0.9) 65%,
-            rgba(31, 12, 66, 0.9) 100%
-        ),
-        url('images/jj.jpg');
+  linear-gradient(
+    150deg,
+    rgba(204, 66, 225, 0.7) 0%,  
+    rgba(77, 34, 150, 0.5) 16%,   
+    rgba(65, 32, 137, 0.6) 33%,   
+    rgba(47, 23, 99, 0.7) 51%,    
+    rgba(31, 13, 65, 0.8) 65%,    
+    rgba(31, 12, 66, 0.8) 100%
+    ),
+    url('images/torneos-de-juegos-0fepy3iyqn0p3ju7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     
 }
+
 
 
 
