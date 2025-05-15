@@ -1,1 +1,6 @@
-Hoy  13/05/2025 inicie con el  HTML algo básico y un también un poco de CSS.
+13/05/2025 Inicié con HTML básico y también un poco de CSS.
+
+14/05/2025 Cambié las imágenes, el logo y los colores. Estuve trabajando en un script para que, al hacer clic, redirija al usuario a un formulario para rellenar sus datos.
+
+15/05/2025 Terminé el script, añadí el logo de la empresa a los formularios y completé el HTML restante. Solo faltaría terminar el CSS restante e investigar cómo agregar algunos efectos.
+
