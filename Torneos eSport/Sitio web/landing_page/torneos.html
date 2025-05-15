@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="oscuro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todos los Torneos - VirtualNest</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="barra-navegacion">
+    <div class="contenedor-navegacion">
+      <div class="logo-contenedor">
+        <img id="fot1" src="img/PNG ICONO BLANCO.png" alt="Icono VirtualNest" />
+        <h1 class="logo"><a href="index.html">VirtualNest</a></h1>
+      </div>
+      <button id="boton-menu" class="boton-hamburguesa">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul class="lista-navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#torneos">Torneos</a></li>
+          <li><a href="#funcionamiento">Cómo Funciona</a></li>
+          <li><a href="#opiniones">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li class="submenu">
+            <a href="#">Cuenta <i class="fas fa-caret-down"></i></a>
+            <ul class="submenu-lista">
+              <li><a href="login.html">Iniciar sesión</a></li>
+              <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+          </li>
+          <li>
+            <button id="boton-tema" class="modo-tema">
+              <i class="fas fa-adjust"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="contenido-pagina tarjeta-principal">
+    <h1>Todos los Torneos</h1>
+    <div class="tarjetas-torneos">
+      <div class="tarjeta">
+        <img src="img/portada-val.png" alt="Torneo Verano" />
+        <h3>Torneo de Verano</h3>
+        <p>FPS competitivo en línea.</p><br>
+        <a href="torneo-verano.html" class="boton">Inscribirse</a>
+      </div>
+      <div class="tarjeta">
+        <img src="img/portada-lol.png" alt="Desafío Épico" />
+        <h3>Desafío Épico</h3>
+        <p>MOBA táctico por equipos.</p><br>
+        <a href="desafio-epico.html" class="boton">Inscribirse</a>
+      </div>
+      <div class="tarjeta">
+        <img src="img/portada-fort.png" alt="Batalla Rápida" />
+        <h3>Batalla Rápida</h3>
+        <p>Torneo exprés con premios rápidos.</p>
+        <a href="batalla-rapida.html" class="boton">Inscribirse</a>
+      </div>
+
+      <!-- Nuevos torneos añadidos -->
+      <div class="tarjeta">
+        <img src="img/portada-fort.png" alt="King of the Ring" />
+        <h3>King of the Ring</h3>
+        <p>Peleas 1v1 en formato eliminatorio.</p>
+        <a href="king-ring.html" class="boton">Inscribirse</a>
+      </div>
+      <div class="tarjeta">
+        <img src="img/portada-asset.jpeg" alt="Ultimate Racing" />
+        <h3>Ultimate Racing</h3>
+        <p>Carreras online de alta velocidad.</p>
+        <a href="ultimate-racing.html" class="boton">Inscribirse</a>
+      </div>
+      <div class="tarjeta">
+        <img src="img/portada-fort.png" alt="Battle Arena" />
+        <h3>Battle Arena</h3>
+        <p>Todos contra todos en combate libre.</p>
+        <a href="battle-arena.html" class="boton">Inscribirse</a>
+      </div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
