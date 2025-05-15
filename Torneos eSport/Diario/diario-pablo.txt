@@ -1,2 +1,6 @@
 13/05/2025
 Hoy empecé con el código HTML para dejar una base en la que apoyarme. También vi un curso Git y GitHub para refrescar la memoria y planee un poco por encima el CSS.
+14/05/2025
+Continuación del codigoy css
+15/05/2025
+Implementacion de nuevos directorios ajustes y redimensionamiento del css adición de imagenes.
