@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - VirtualNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="login-form">
+        <img src="images/Logo GamersHub sin fondo.png" alt="logo GamersHub" class="logo-login">
+        <h2>Iniciar Sesión</h2>
+        <form id="form-login">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Introduce tu correo" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="********" required>
+
+            <button type="submit">Iniciar sesión</button>
+        </form>
+
+        <div id="login-exitoso" style="display:none; margin-top: 20px; color: green; text-align: center;">
+            ¡Inicio de sesión exitoso!
+        </div>
+        
+        <p style="text-align: center; margin-top: 20px;">
+            ¿No tienes cuenta? <a href="registro.html" style="color: #EE13C4;">Crear cuenta</a>
+        </p>
+    </div>
+
+    <script>
+        const form = document.getElementById('form-login');
+        const mensaje = document.getElementById('login-exitoso');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            mensaje.style.display = 'block';
+            form.reset(); 
+        });
+    </script>
+
+</body>
+</html>

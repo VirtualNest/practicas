@@ -31,6 +31,11 @@
             </nav>
         </div>
 
+        <div class="auth-buttons">
+                <a href="login.html" class="btn-auth">Iniciar sesión</a>
+                <a href="registro.html" class="btn-auth">Crear cuenta</a>
+        </div>
+
         <div class="header-content">
             <div class="header-txt">
                 <h1>Torneos de<br> eSports</h1>
@@ -39,8 +44,7 @@
                    de los rangos en tus juegos favoritos. Supera cada desafío, mejora tus habilidades 
                    y demuestra que tenés lo necesario para llegar a la cima.
                 </p>
-                <a href="#" class="btn"  id="register-btn">¡REGISTRATE YA!</a>
-            
+                <a href="registro.html" class="btn" target="_blank">¡REGISTRATE YA!</a>
              </div>
 
             <!--div class="header-img">
@@ -51,17 +55,46 @@
     </div>
     </header>
 
-    <div id="register-form"style="display: none;">
-        <h2>Crear Cuenta</h2>
+     <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <p>Somos una empresa dedicada a...</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </section>
+
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Envíanos un mensaje a través del siguiente formulario.</p>
         <form>
-            <label for="email">Dirección de correo electrónico:</label>
-            <input type="email" id="email" placeholder="Introduce tu correo" required>
-            <button type="submit">Continuar</button>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
         </form>
-    </div>
+    </section>
+
+    <section id="partners">
+        <h2>Partners</h2>
+        <p>Aquí podrás conocer a nuestros increíbles partners y colaboradores.</p>
+        <ul>
+            <li>Partner 1</li>
+            <li>Partner 2</li>
+            <li>Partner 3</li>
+        </ul>
+    </section>
+
+    <section id="faq">
+        <h2>Preguntas Frecuentes (FAQ)</h2>
+        <p>Encuentra respuestas a las preguntas más comunes aquí.</p>
+        <ul>
+            <li><strong>¿Pegunta 1?</strong><br></li>
+            <li><strong>¿Pregunta 2?</strong><br></li>
+            <li><strong>¿Pregunta 3?</strong><br></li>
+        </ul>
+    </section>
+    
 
     <footer id="sponsored">
-
         <div class="footer-container">
            <p class="spon">&copy; 2025 VirtualNest</p>
            <div class="social-icons">
@@ -81,12 +114,6 @@
     </div>
     </footer>
 
-    <script src="script.js"></script> 
-
-
-     
-
-    
 
 </body>
 </html>
