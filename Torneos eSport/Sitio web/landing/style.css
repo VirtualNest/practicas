@@ -1,4 +1,5 @@
 /*Elimina márgenes*/
+
 *{
     margin: 0;
     padding: 0;
@@ -7,19 +8,18 @@
     box-sizing: border-box;
 }
 
-
 header {
     background: 
-        linear-gradient(
-            150deg,
-            rgba(204, 66, 225, 0.7) 0%,
-            rgba(77, 34, 150, 0.8) 16%,
-            rgba(65, 32, 137, 0.8) 33%,
-            rgba(47, 23, 99, 0.8) 51%,
-            rgba(31, 13, 65, 0.9) 65%,
-            rgba(31, 12, 66, 0.9) 100%
-        ),
-        url('images/jj.jpg');
+  linear-gradient(
+    150deg,
+    rgba(204, 66, 225, 0.7) 0%,  
+    rgba(77, 34, 150, 0.5) 16%,   
+    rgba(65, 32, 137, 0.6) 33%,   
+    rgba(47, 23, 99, 0.7) 51%,    
+    rgba(31, 13, 65, 0.8) 65%,    
+    rgba(31, 12, 66, 0.8) 100%
+    ),
+    url('images/torneos-de-juegos-0fepy3iyqn0p3ju7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,9 +42,7 @@ body{
 
 */
 
-
-
-
+/*h1*/
 header{
     min-height: 100vh;
 }
@@ -68,7 +66,11 @@ img{
    color: #EE13C4;
    font-size: 25px;
    text-transform: uppercase;
- 
+}
+
+.logo img {
+    height: 140px;
+    width: auto;
 }
 
     
@@ -103,6 +105,158 @@ display: none;
    display: none;
 }
 
+/*login and create*/
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    display: flex;
+    gap: 20px; 
+}
+/* Estilo de los botones */
+.btn-auth {
+    background: linear-gradient(90deg, rgba(244,77,243,1) 0%, rgba(225,0,182,1) 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.btn-auth:hover {
+    background-color: #1f0c42; 
+}
+/*logind and create!*/
+/*h2*/
+/* Estilos del formulario de registro */
+#register-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Inter', sans-serif;
+}
+
+#register-form h2 {
+    color: #1f0c42;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#register-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+#login-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos del título en el formulario de inicio de sesión */
+#login-form h2 {
+    color: #1f0c42;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Etiquetas dentro del formulario */
+#login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilos comunes para formularios */
+#login-form input[type="email"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #1f0c42;
+    border-radius: 8px;
+}
+
+/* Estilos del botón  */
+#login-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, rgba(244,77,243,1) 0%, rgba(225,0,182,1) 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* hover */
+#login-form button:hover {
+    background: #1f0c42;
+}
+
+
+#register-form input[type="email"],
+#register-form input[type="text"],
+#register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #1f0c42; 
+    border-radius: 8px;
+}
+
+/* Estilos del botón */
+#register-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, rgba(244,77,243,1) 0%, rgba(225,0,182,1) 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#register-form button:hover {
+    background: #1f0c42;
+    transform: scale(1.05);  /* Efecto al hacer hover */
+}
+
+
+.logo-login {
+    display: block;
+    margin: 0 auto 20px auto; 
+    width: 120px;             /
+    height: auto;            
+    border-radius: 10px;     
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.logo-register {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 120px;            
+    height: auto;
+    border-radius: 10px;      
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+
+/*h2!*/
 
 .header-content{
     display: flex;
@@ -126,7 +280,7 @@ display: none;
          
 .header-txt p{
     font-size: 20px;
-    color: #C1C1C1;
+    color: #FFFFFF;
     margin-bottom: 15px;
 }
 
@@ -138,9 +292,48 @@ display: none;
     font-size: 18px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-}      
+}    
 
+footer {
+    background-color: #1f0c42;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: center; /
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    gap: 20px;             
+}
+
+footer .spon {
+    color: #EE13C4;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    gap: 25px;                
+}
+
+.social-icons a img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
    
+}
+
+.twitch-icon img {
+    width: 60px !important; 
+    height: 60px !important; 
+}
 
 .header-img{
 flex-basis: 50%;
@@ -207,55 +400,6 @@ flex-basis: 50%;
         margin-top: 10px;
     }
 }
-
-
-
-
-
-
-footer {
-    background-color: #1f0c42;
-    color: white;
-    padding: 40px 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center; /* centra el texto */
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;     
-    gap: 20px;             
-}
-
-footer .spon {
-    color: #EE13C4;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center; 
-    align-items: center;      
-    gap: 25px;                
-}
-
-
-.social-icons a img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-   
-}
-
-
-.twitch-icon img {
-    width: 60px !important; 
-    height: 60px !important; 
-}
-
 
 
 

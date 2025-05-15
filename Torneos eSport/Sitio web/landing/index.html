@@ -12,37 +12,41 @@
     <header>
     <div class="container">
         <div class="menu">
-            <a href="#" class="logo">VirtualNest</a>     
+            <a href="#" class="logo">
+                <img src="images/Logo GamersHub sin fondo.png" alt="GamersHub">
+            </a>   
             <input type="checkbox" id="menu" />
             <label for="menu">
                 <img src="images/menu.png" class="menu-icono" alt="MENU">
             </label>
             <nav class="navbar">
                 <ul>
-                     <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="#">Quienes Somos</a></li>
-                    <li><a href="#">Servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Partners</a></li>
+                    <li><a href="#">FAQ</a></li>
                     <li><a href="#sponsored">Sponsor</a></li>
                 </ul>
             </nav>
         </div>
 
+        <div class="auth-buttons">
+                <a href="login.html" class="btn-auth">Iniciar sesión</a>
+                <a href="registro.html" class="btn-auth">Crear cuenta</a>
+        </div>
+
         <div class="header-content">
             <div class="header-txt">
-                <h1>Titulo <br> landing page</h1>
+                <h1>Torneos de<br> eSports</h1>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipiscing, elit dapibus dictum placerat aliquam, tristique lacus cras nostra faucibus. 
-                   Ante cum venenatis primis netus suspendisse neque maecenas hendrerit, quis torquent vivamus ornare libero posuere vitae, pellentesque 
-                   suscipit convallis quam ut consequat nunc. Non ornare magna duis luctus rhoncus leo suspendisse conubia faucibus velit, porttitor metus 
-                   proin et quam gravida fermentum feugiat ultricies, consequat lectus ante malesuada eleifend sociosqu vulputate vestibulum habitant.
+                   Experimenta juegos competitivos en su mejor momento mientras asciendes a través 
+                   de los rangos en tus juegos favoritos. Supera cada desafío, mejora tus habilidades 
+                   y demuestra que tenés lo necesario para llegar a la cima.
                 </p>
-                <a href="#" class="btn">Leer mas</a>
-            
+                <a href="registro.html" class="btn" target="_blank">¡REGISTRATE YA!</a>
              </div>
 
-             
             <!--div class="header-img">
                 <img src="images/ImageToStl.com_ddddddd.svg">
             </div> 
@@ -51,8 +55,46 @@
     </div>
     </header>
 
-    <footer id="sponsored">
+     <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <p>Somos una empresa dedicada a...</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </section>
 
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Envíanos un mensaje a través del siguiente formulario.</p>
+        <form>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="partners">
+        <h2>Partners</h2>
+        <p>Aquí podrás conocer a nuestros increíbles partners y colaboradores.</p>
+        <ul>
+            <li>Partner 1</li>
+            <li>Partner 2</li>
+            <li>Partner 3</li>
+        </ul>
+    </section>
+
+    <section id="faq">
+        <h2>Preguntas Frecuentes (FAQ)</h2>
+        <p>Encuentra respuestas a las preguntas más comunes aquí.</p>
+        <ul>
+            <li><strong>¿Pegunta 1?</strong><br></li>
+            <li><strong>¿Pregunta 2?</strong><br></li>
+            <li><strong>¿Pregunta 3?</strong><br></li>
+        </ul>
+    </section>
+    
+
+    <footer id="sponsored">
         <div class="footer-container">
            <p class="spon">&copy; 2025 VirtualNest</p>
            <div class="social-icons">
@@ -72,7 +114,6 @@
     </div>
     </footer>
 
-    
 
 </body>
 </html>
