@@ -1,1 +1,3 @@
-Hoy  13/05/2025 inicie con el  HTML algo básico y un también un poco de CSS.
+13/05/2025 inicie con el  HTML algo básico y un también un poco de CSS.
+
+14/05/2025 voy a cambiar las imáge

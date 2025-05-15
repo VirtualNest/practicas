@@ -1,4 +1,5 @@
 /*Elimina márgenes*/
+
 *{
     margin: 0;
     padding: 0;
@@ -7,19 +8,18 @@
     box-sizing: border-box;
 }
 
-
 header {
     background: 
-        linear-gradient(
-            150deg,
-            rgba(204, 66, 225, 0.7) 0%,
-            rgba(77, 34, 150, 0.8) 16%,
-            rgba(65, 32, 137, 0.8) 33%,
-            rgba(47, 23, 99, 0.8) 51%,
-            rgba(31, 13, 65, 0.9) 65%,
-            rgba(31, 12, 66, 0.9) 100%
-        ),
-        url('images/jj.jpg');
+  linear-gradient(
+    150deg,
+    rgba(204, 66, 225, 0.7) 0%,  
+    rgba(77, 34, 150, 0.5) 16%,   
+    rgba(65, 32, 137, 0.6) 33%,   
+    rgba(47, 23, 99, 0.7) 51%,    
+    rgba(31, 13, 65, 0.8) 65%,    
+    rgba(31, 12, 66, 0.8) 100%
+    ),
+    url('images/torneos-de-juegos-0fepy3iyqn0p3ju7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,8 +41,6 @@ body{
 }
 
 */
-
-
 
 
 header{
@@ -68,7 +66,11 @@ img{
    color: #EE13C4;
    font-size: 25px;
    text-transform: uppercase;
- 
+}
+
+.logo img {
+    height: 140px;
+    width: auto;
 }
 
     
@@ -126,7 +128,7 @@ display: none;
          
 .header-txt p{
     font-size: 20px;
-    color: #C1C1C1;
+    color: #FFFFFF;
     margin-bottom: 15px;
 }
 
@@ -138,9 +140,50 @@ display: none;
     font-size: 18px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-}      
+}    
 
+footer {
+    background-color: #1f0c42;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: center; /* centra el texto */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    gap: 20px;             
+}
+
+footer .spon {
+    color: #EE13C4;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    gap: 25px;                
+}
+
+
+.social-icons a img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
    
+}
+
+
+.twitch-icon img {
+    width: 60px !important; 
+    height: 60px !important; 
+}
 
 .header-img{
 flex-basis: 50%;
@@ -207,74 +250,4 @@ flex-basis: 50%;
         margin-top: 10px;
     }
 }
-
-
-
-
-
-
-footer {
-    background-color: #1f0c42;
-    color: white;
-    padding: 40px 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center; /* centra el texto */
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;     
-    gap: 20px;             
-}
-
-footer .spon {
-    color: #EE13C4;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center; 
-    align-items: center;      
-    gap: 25px;                
-}
-
-
-.social-icons a img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-   
-}
-
-
-.twitch-icon img {
-    width: 60px !important; 
-    height: 60px !important; 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -12,18 +12,20 @@
     <header>
     <div class="container">
         <div class="menu">
-            <a href="#" class="logo">VirtualNest</a>     
+            <a href="#" class="logo">
+                <img src="images/Logo GamersHub sin fondo.png" alt="GamersHub">
+            </a>   
             <input type="checkbox" id="menu" />
             <label for="menu">
                 <img src="images/menu.png" class="menu-icono" alt="MENU">
             </label>
             <nav class="navbar">
                 <ul>
-                     <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="#">Quienes Somos</a></li>
-                    <li><a href="#">Servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Partners</a></li>
+                    <li><a href="#">FAQ</a></li>
                     <li><a href="#sponsored">Sponsor</a></li>
                 </ul>
             </nav>
@@ -31,18 +33,16 @@
 
         <div class="header-content">
             <div class="header-txt">
-                <h1>Titulo <br> landing page</h1>
+                <h1>Torneos de<br> eSports</h1>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipiscing, elit dapibus dictum placerat aliquam, tristique lacus cras nostra faucibus. 
-                   Ante cum venenatis primis netus suspendisse neque maecenas hendrerit, quis torquent vivamus ornare libero posuere vitae, pellentesque 
-                   suscipit convallis quam ut consequat nunc. Non ornare magna duis luctus rhoncus leo suspendisse conubia faucibus velit, porttitor metus 
-                   proin et quam gravida fermentum feugiat ultricies, consequat lectus ante malesuada eleifend sociosqu vulputate vestibulum habitant.
+                   Experimenta juegos competitivos en su mejor momento mientras asciendes a través 
+                   de los rangos en tus juegos favoritos. Supera cada desafío, mejora tus habilidades 
+                   y demuestra que tenés lo necesario para llegar a la cima.
                 </p>
-                <a href="#" class="btn">Leer mas</a>
+                <a href="#" class="btn"  id="register-btn">¡REGISTRATE YA!</a>
             
              </div>
 
-             
             <!--div class="header-img">
                 <img src="images/ImageToStl.com_ddddddd.svg">
             </div> 
@@ -50,6 +50,15 @@
          </div>
     </div>
     </header>
+
+    <div id="register-form"style="display: none;">
+        <h2>Crear Cuenta</h2>
+        <form>
+            <label for="email">Dirección de correo electrónico:</label>
+            <input type="email" id="email" placeholder="Introduce tu correo" required>
+            <button type="submit">Continuar</button>
+        </form>
+    </div>
 
     <footer id="sponsored">
 
@@ -71,6 +80,11 @@
         </div>
     </div>
     </footer>
+
+    <script src="script.js"></script> 
+
+
+     
 
     
 
