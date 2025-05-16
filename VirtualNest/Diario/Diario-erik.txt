@@ -77,3 +77,171 @@ Hoy he seguido trbajando en el código de la pagina web además de haber añadid
 </div>  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+15/05/25
+Esutve trabajando en el código y modificándolo para poner el responsive
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtualnest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column justify-content-center align-items-center text-center min-vh-100">
+    <div class="container my-5">
+
+        <!-- Título y descripción -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">No buscamos simplemente cumplir expectativas, aspiramos a redefinirlas</h1>
+            <p class="lead">
+                En VirtualNest elevamos cada proyecto digital con dedicación excepcional. Nuestros servicios web,
+                desarrollo de aplicaciones móvil, marketing digital, SEO y hosting destacan por su calidad meticulosa y
+                enfoque personalizado.
+                Con un modelo único de pago por resultados, convertimos tu visión empresarial en soluciones digitales
+                que no solo funcionan eficientemente, sino que afianzan y aumentan tu número de clientes, generando un
+                impacto real y medible para tu negocio.
+            </p>
+        </div>
+
+        <!-- Línea -->
+        <hr>
+
+        <!-- Sección de contenido en dos columnas -->
+        <div class="row align-items-center justify-content-center text-center mt-5">
+            <!-- Columna con video -->
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <video autoplay loop muted class="img-fluid">
+                    <source src="videos/VR empresa.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Columna con texto -->
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center text-center">
+                <h3 class="fw-bold">Soluciones digitales completas</h3>
+                <p>
+                    Potenciamos tu presencia online con un enfoque integral que abarca todas sus necesidades digitales.
+                    Desde sitios web de alto impacto y aplicaciones móviles innovadoras hasta SEO estratégico y hosting
+                    seguro, nuestros servicios trabajan en perfecta sinergia para maximizar resultados.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <span class="text-primary fw-bold">>></span>
+                        <span class="ms-2">Tecnología de vanguardia que impulsa tu competitividad</span>
+                    </li>
+                    <li class="mb-3">
+                        <span class="text-primary fw-bold">>></span>
+                        <span class="ms-2">Enfoque centrado en resultados medibles y tangibles</span>
+                    </li>
+                    <li>
+                        <span class="text-primary fw-bold">>></span>
+                        <span class="ms-2">Soporte personalizado continuo sin costes adicionales</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary mt-3">Descubra nuestras soluciones</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="container mt-5">
+        <div class="row g-4">
+            <!--Primer servicio: Desarrollo Web Profesional-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card text-white flex-fill d-flex align-items-center justify-content-center text-center"
+                    style="background-image: url('imagenes/codigo.jpg'); background-size: cover; background-position: center; height: 350px;">
+                    <div class="card-body bg-dark bg-opacity-50 w-100 d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="card-title">Desarrollo Web Profesional</h5>
+                        <p class="card-text">Creamos sitios web y aplicaciones a medida que capturan la esencia de su marca.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Segundo servicio: SEO y posicionamiento orgánico-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card text-white flex-fill d-flex align-items-center justify-content-center text-center"
+                    style="background-image: url('imagenes/lightbox_como-posicionar-mi-pagina-web-de-forma-simple.jpg'); background-size: cover; background-position: center; height: 350px;">
+                    <div class="card-body bg-dark bg-opacity-50 w-100 d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="card-title">SEO y posicionamiento orgánico</h5>
+                        <p class="card-text">Mejoramos tu visibilidad online con técnicas avanzadas de SEO que atraen tráfico cualificado y transforman visitantes casuales en clientes leales y recurrentes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tercer servicio: Marketing Digital Integral-->
+            <div class="col-12 col-md-12 col-lg-4 d-flex">
+                <div class="card text-white flex-fill d-flex align-items-center justify-content-center text-center"
+                    style="background-image: url('imagenes/marketing digital.jpg'); background-size: cover; background-position: center; height: 350px;">
+                    <div class="card-body bg-dark bg-opacity-50 w-100 d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="card-title">Marketing Digital Integral</h5>
+                        <p class="card-text">Implementamos estrategias personalizadas que potencian tu marca, conectan con tu audiencia ideal y generan resultados medibles y escalables para el crecimiento sostenible de tu negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Título principal -->
+            <div class="col-12 mb-4">
+                <h1 class="fw-bold">Por qué VirtualNest marca la diferencia</h1>
+                <p class="text-muted"><strong>Tu inversión digital en resultados tangibles</strong></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Texto introductorio -->
+            <div class="col-12 col-lg-4 mb-4">
+                <p>VirtualNest combina creatividad tecnológica con estrategia empresarial para ofrecer soluciones digitales que no solo funcionan, sino que transforman negocios.</p>
+                <p>Nuestra experiencia nos aporta una perspectiva única sobre la experiencia de usuario y el diseño visual que aplicamos a todos nuestros servicios.</p>
+            </div>
+
+            <!-- Bloques de información -->
+            <div class="col-12 col-lg-8">
+                <div class="row g-4">
+                    <!-- Pago por resultados garantizados -->
+                    <div class="col-12 col-md-4">
+                        <div class="bg-dark text-white p-4 rounded h-100"
+                            style="background: url('imagenes/videoframe_11652.png') center/cover; backdrop-filter: brightness(0.5);">
+                            <h5 class="fw-bold">Pago por resultados garantizados</h5>
+                            <p class="mb-0">No exigimos pagos anticipados completos. Comenzamos a trabajar y solo cobramos cuando se alcanzan objetivos medibles y tangibles para su negocio. <strong>Su éxito es nuestro éxito</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Equipo 100% especializado -->
+                    <div class="col-12 col-md-4">
+                        <div class="bg-dark text-white p-4 rounded h-100"
+                            style="background: url('imagenes/videoframe_25165.png') center/cover; backdrop-filter: brightness(0.5);">
+                            <h5 class="fw-bold">Equipo 100% especializado</h5>
+                            <p class="mb-0">Nuestro equipo combina programadores, diseñadores y estrategas de marketing con más de 10 años de experiencia en el sector digital. <strong>Cada proyecto cuenta con especialistas dedicados</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Resultados medibles y escalables -->
+                    <div class="col-12 col-md-4">
+                        <div class="bg-dark text-white p-4 rounded h-100"
+                            style="background: url('imagenes/videoframe_11652.png') center/cover; backdrop-filter: brightness(0.5);">
+                            <h5 class="fw-bold">Resultados medibles y escalables</h5>
+                            <p class="mb-0">Establecemos métricas claras desde el inicio y trabajamos sistemáticamente para alcanzar y superar estos objetivos. <strong>Informes periódicos detallados garantizan total transparencia</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
