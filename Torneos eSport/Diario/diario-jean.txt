@@ -4,3 +4,4 @@
 
 15/05/2025 Terminé el script, añadí el logo de la empresa a los formularios y completé el HTML restante. Solo faltaría terminar el CSS restante e investigar cómo agregar algunos efectos.
 
+19/05/2025 terminé el HTML y el CSS de la página web, aunque faltan mejorar como el color, el CSS de registro y el inicio de sesión. .
