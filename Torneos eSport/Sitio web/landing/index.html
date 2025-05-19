@@ -22,11 +22,11 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quienes Somos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Partners</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#sponsored">Sponsor</a></li>
+                    <li><a href="#quienes-somos">Quienes Somos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#sponsored"></a></li>
                 </ul>
             </nav>
         </div>
@@ -55,60 +55,92 @@
     </div>
     </header>
 
-     <section id="quienes-somos">
-        <h2>Quiénes Somos</h2>
-        <p>Somos una empresa dedicada a...</p>
-        <a href="#contacto" class="btn">Contáctanos</a>
+    <section id="quienes-somos" class="quienes-somos">
+    <h2>Quiénes Somos</h2>
+    <p>
+        Somos una plataforma dedicada a organizar torneos de eSports para jugadores de todos los niveles. 
+        Nuestro objetivo es brindar competencias justas, divertidas y accesibles en juegos populares como 
+        Valorant, LoL, CS2, y más.
+    </p>
+    <p>
+        Ya seas principiante o competitivo, en GamersHub tenés un lugar para mejorar, 
+        competir y disfrutar con tus juegos favoritos.
+    </p>
+    <a href="#contacto" class="btn">Contáctanos</a>
     </section>
 
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Envíanos un mensaje a través del siguiente formulario.</p>
-        <form>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
-            <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>Envíanos un mensaje a través del siguiente formulario. Nos encantaría saber tu opinión, responder a tus preguntas o ayudarte con cualquier duda que tengas.</p>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
     </section>
 
-    <section id="partners">
-        <h2>Partners</h2>
-        <p>Aquí podrás conocer a nuestros increíbles partners y colaboradores.</p>
-        <ul>
-            <li>Partner 1</li>
-            <li>Partner 2</li>
-            <li>Partner 3</li>
-        </ul>
+    <section id="faq" class="faq">
+    <h2>Preguntas Frecuentes (FAQ)</h2>
+    <p>Encuentra respuestas a las preguntas más comunes aquí.</p>
+    <ul>
+        <li><strong>¿Cómo me registro en un torneo?</strong><br>
+            Para registrarte, solo tienes que crear una cuenta en nuestro sitio web y completar el formulario.
+        </li>
+        <li><strong>¿Qué juegos están disponibles para competir?</strong><br>
+            Actualmente, los torneos están disponibles para juegos como League of Legends, Valorant, CS2, etc.
+        </li>
+        <li><strong>¿Cuáles son los premios?</strong><br>
+            Los premios pueden incluir dinero en efectivo.
+        </li>
+        <li><strong>¿Dónde se realizan los torneos? ¿Son online o presenciales?</strong><br>
+            Los torneos son en su mayoría en línea, pero ocasionalmente hay eventos presenciales.
+        </li>
+        <li><strong>¿Cómo me entero de los próximos torneos?</strong><br>
+            Te recomendamos seguirnos en nuestras redes sociales para recibir actualizaciones sobre los próximos torneos.
+        </li>
+        <li><strong>¿Se transmiten los torneos en vivo?</strong><br>
+            Sí, todos los torneos se transmiten en vivo a través de plataformas como Twitch y YouTube.
+        </li>
+    </ul> 
     </section>
 
-    <section id="faq">
-        <h2>Preguntas Frecuentes (FAQ)</h2>
-        <p>Encuentra respuestas a las preguntas más comunes aquí.</p>
-        <ul>
-            <li><strong>¿Pegunta 1?</strong><br></li>
-            <li><strong>¿Pregunta 2?</strong><br></li>
-            <li><strong>¿Pregunta 3?</strong><br></li>
-        </ul>
-    </section>
+    <section id="partners" class="partners">
+    <h2>Partners</h2>
+    <p>Conoce a nuestros colaboradores que hacen esto posible:</p>
+    <div class="partners-logos">
+        <a href="https://row.hyperx.com/es" target="_blank">
+            <img src="images/674b7d54d5b3e-HyperX.png" alt="HyperX">
+        </a>
+        <a href="https://www.lenovo.com" target="_blank">
+            <img src="images/lenovo-new-seeklogo.png" alt="Lenovo">
+        </a>
+        <a href="https://www.amd.com/es.html" target="_blank">
+            <img src="images/amd-ryzen-seeklogo.png" alt="AMD">
+        </a>
+    </div>
+</section>
+
     
 
     <footer id="sponsored">
         <div class="footer-container">
-           <p class="spon">&copy; 2025 VirtualNest</p>
+           <p class="spon">Copyright ® 2025 VirtualNest</p>
            <div class="social-icons">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook-5-logo-svgrepo-com.svg" alt="Facebook">
+                <img src="images/facebook.png" alt="Facebook">
             </a>
             <a href="https://www.youtube.com/" target="_blank" >
-                <img src="images/youtube-svgrepo-com.svg" alt="YouTube">
+                <img src="images/youtube.png" alt="YouTube">
             </a>
             <a href="https://www.twitch.tv/" target="_blank"  class="twitch-icon">
-                <img src="images/twitch-v2-svgrepo-com.svg" alt="Twitch">
+                <img src="images/twitch.png" alt="Twitch">
             </a>
-            <a href="https://discord.com/" target="_blank">
-                <img src="images/discord-svgrepo-com.svg" alt="Discord">
+            <a href="https://x.com/" target="_blank"  class="twiter-icon">
+                <img src="images/twitter.png" alt="Twiter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
             </a>
         </div>
     </div>

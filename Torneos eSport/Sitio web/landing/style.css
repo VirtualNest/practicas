@@ -240,7 +240,7 @@ display: none;
 .logo-login {
     display: block;
     margin: 0 auto 20px auto; 
-    width: 120px;             /
+    width: 120px;             
     height: auto;            
     border-radius: 10px;     
     box-shadow: 0 0 10px rgba(0,0,0,0.1); 
@@ -292,14 +292,206 @@ display: none;
     font-size: 18px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-}    
+}  
+
+/*quienes-somos*/
+.quienes-somos {
+    background-color: rgba(31, 13, 65, 0.9); /* color oscuro con transparencia */
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.quienes-somos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #EE13C4;
+}
+
+.quienes-somos p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.quienes-somos .btn {
+    margin-top: 20px;
+}
+/*!quiene-ssomos*/
+
+
+/**/
+.contacto {
+    background-color: rgba(31, 13, 65, 0.9);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #EE13C4;
+}
+
+.contacto p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* Estilos del formulario */
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #EE13C4;
+    background-color: #ffffff;
+    color: #1f0c42;
+    font-family: 'Inter', sans-serif;
+}
+
+.contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contacto button {
+    padding: 12px;
+    background: linear-gradient(90deg, rgba(244,77,243,1) 0%, rgba(225,0,182,1) 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contacto button:hover {
+    background: #1f0c42;
+    transform: scale(1.05);
+}
+/**/
+
+
+
+/*!*/
+.faq {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.faq h2 {
+    font-size: 36px;
+    color: #1f0c42;
+    margin-bottom: 20px;
+}
+
+.faq p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.faq ul {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq li {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #EE13C4;
+    border-radius: 0; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: background 0.3s ease;
+}
+
+.faq li:hover {
+    background-color: #fef3fd;
+}
+/*!*/
+
+
+/****/
+
+.partners {
+    background-color: rgba(31, 13, 65, 0.9);  
+    color: #ffffff;  
+    text-align: center;
+    padding: 80px 20px; 
+    font-family: 'Inter', sans-serif; 
+}
+
+.partners h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #EE13C4; 
+}
+
+.partners p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;  
+    line-height: 1.6;
+}
+
+/* Estilos para los logos */
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+.partners-logos a {
+    display: inline-block;
+    width: 120px; 
+    height: 120px;
+}
+
+.partners-logos a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+
+.partners-logos a:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+/****/
+
 
 footer {
     background-color: #1f0c42;
     color: white;
     padding: 40px 20px;
     font-family: 'Inter', sans-serif;
-    text-align: center; /
+    text-align: center; 
 }
 
 .footer-container {
@@ -324,20 +516,27 @@ footer .spon {
 }
 
 .social-icons a img {
-    width: 90px;
-    height: 90px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
-   
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2) rotate(5deg);
+    
 }
 
 .twitch-icon img {
-    width: 60px !important; 
-    height: 60px !important; 
+    width: 30px !important; 
+    height: 30px !important; 
 }
 
-.header-img{
-flex-basis: 50%;
+.header-img {
+    flex-basis: 50%;
 }
+
+
 
 @media(max-width: 991px) {
     .menu {
@@ -374,7 +573,7 @@ flex-basis: 50%;
 
     /* Aquí es donde entra la regla clave */
     #menu:checked ~ .navbar {
-        display: block; /* Muestra el menú cuando el checkbox está marcado */
+        display: block; 
     }
 
     .header-content {
