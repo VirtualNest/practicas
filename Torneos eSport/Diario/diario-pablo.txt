@@ -4,3 +4,7 @@ Hoy empecé con el código HTML para dejar una base en la que apoyarme. También
 Continuación del codigoy css
 15/05/2025
 Implementacion de nuevos directorios ajustes y redimensionamiento del css adición de imagenes.
+16/05/2025
+Creación de un diseño para cliente en canva. Cursos de React.
+19/05/2025
+Empezamos el codigo del diseño propuesto por el cliente.
