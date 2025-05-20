@@ -1,0 +1,120 @@
+/*--SOLICITUD PRESUPUESTO */
+
+.contact-section {
+    background-color: #d9c3aa;
+    color: white;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+h3,
+h4.h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.form-control,
+.form-select {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    height: auto;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+textarea.form-control {
+    resize: none;
+    min-height: 120px;
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+/*--COMO JUGAR PARTE 2 */
+
+.text-narrow {
+    max-width: 85%;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.custom-h3 {
+    margin-left: 1rem;
+    font-size: 1.75rem;
+}
+
+.btn-center {
+    display: block;
+    margin: 2rem auto 0;
+    width: auto;
+}
+
+.video-right {
+    display: flex;
+    justify-content: center;
+}
+
+/*--SLIDE */
+
+.carousel-item {
+    position: relative;
+    height: 600px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    text-align: center;
+    z-index: 2;
+    color: white; 
+}
