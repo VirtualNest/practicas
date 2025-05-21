@@ -32,6 +32,103 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+/* ========== EFECTOS Y ANIMACIONES NUEVAS ========== */
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('img/Logo GamersHub sin fondo.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.animado {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* ========== NUEVO ESTILO DE BOTÓN DESTACADO ========== */
+.boton-llamativo {
+  background: linear-gradient(135deg, #00ffd9, #00b7ff);
+  box-shadow: 0 0 20px rgba(0, 255, 217, 0.6);
+  color: #000;
+  border-radius: 30px;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+}
+
+.boton-llamativo:hover {
+  background: linear-gradient(135deg, #00b7ff, #00ffd9);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+}
+
+/* ========== ICONOS EN TARJETAS MINI ========== */
+.icono-hover {
+  position: relative;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.icono-hover .icono-efecto {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  color: #00ffd9;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icono-hover:hover .icono-efecto {
+  transform: translateX(-50%) scale(1.2);
+  color: #00cbb5;
+}
+
+/* ========== DETALLE EXTRA EN SECCIONES ========== */
+.seccion h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.seccion h2::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #00ffd9;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* ========== MEJORA DE FAQ ========== */
+details {
+  border-left: 4px solid #00ffd9;
+  padding-left: 1rem;
+  background-color: #1f1f1f;
+  transition: all 0.3s;
+}
+
+details:hover {
+  background-color: #2b2b2b;
+}
+
+/* ========== FORMULARIO ANIMADO ========== */
+form input:focus,
+form textarea:focus {
+  border-color: #00ffd9;
+  outline: none;
+  box-shadow: 0 0 5px #00ffd9;
+}
 
 
 .logo-contenedor {

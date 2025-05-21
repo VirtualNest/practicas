@@ -394,3 +394,20 @@ footer {
 .nav-links a:hover {
     text-decoration: underline;
 }
+#eventos .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+#eventos .social-icons a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease;
+}
+
+#eventos .social-icons a img:hover {
+    transform: scale(1.1);
+}
+

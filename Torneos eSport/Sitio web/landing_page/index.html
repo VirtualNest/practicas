@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/estilo.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  
 </head>
 
 <body>
@@ -23,81 +22,79 @@
       </button>
       <nav>
         <ul class="lista-navegacion">
-  <li><a href="index.html">Inicio</a></li>
-  <li><a href="#nosotros">Sobre Nosotros</a></li>
-  <li><a href="#torneos">Torneos</a></li>
-  <li><a href="#funcionamiento">Cómo Funciona</a></li>
-  <li><a href="#opiniones">Testimonios</a></li>
-  <li><a href="#contacto">Contacto</a></li>
-
-  <!-- Submenú Cuenta -->
-  <li class="submenu">
-    <a href="#">Cuenta <i class="fas fa-caret-down"></i></a>
-    <ul class="submenu-lista">
-      <li><a href="login.html">Iniciar sesión</a></li><!--rediriccionar a otra pagina con base de datos asociada-->
-      <li><a href="registro.html">Registrarse</a></li>
-    </ul>
-  </li>
-
-  <li>
-    <button id="boton-tema" class="modo-tema">
-      <i class="fas fa-adjust"></i>
-    </button>
-  </li>
-</ul>
-
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#torneos">Torneos</a></li>
+          <li><a href="#funcionamiento">Cómo Funciona</a></li>
+          <li><a href="#opiniones">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li class="submenu">
+            <a href="#">Cuenta <i class="fas fa-caret-down"></i></a>
+            <ul class="submenu-lista">
+              <li><a href="login.html">Iniciar sesión</a></li>
+              <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+          </li>
+          <li>
+            <button id="boton-tema" class="modo-tema">
+              <i class="fas fa-adjust"></i>
+            </button>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="contenido-pagina tarjeta-principal">
-  <section class="seccion-torneos">
-    <h1>Torneos Actuales</h1>
-    <p>Explora los torneos en curso y únete a la competencia.</p>
-
-    <!-- Buscador -->
-    <div class="buscador-torneos">
-      <input type="text" placeholder="Buscar torneo por nombre o juego..." />
-      <button class="boton"><i class="fas fa-search"></i> Buscar</button>
-    </div>
-
-    <!-- Filtro -->
-    <div class="filtro-torneos">
-      <label for="filtro">Filtrar por categoría:</label>
-      <select id="filtro">
-        <option>Todos</option>
-        <option>Shooter</option>
-        <option>MOBA</option>
-        <option>Battle Royale</option>
-        <option>Deportes</option>
-      </select>
-    </div>
-
-    <!-- Tarjetas ejemplo -->
-    <div class="tarjetas-torneos-mini">
-      <div class="tarjeta-mini">
-        <h3><i class="fas fa-fire"></i> Arena Pro</h3>
-        <p>Competencia semanal de FPS</p>
-      </div>
-      <div class="tarjeta-mini">
-        <h3><i class="fas fa-dragon"></i> League Clash</h3>
-        <p>Torneo 5v5 MOBA estratégico</p>
-      </div>
-      <div class="tarjeta-mini">
-        <h3><i class="fas fa-futbol"></i> Fútbol eCup</h3>
-        <p>Duelo deportivo online 1v1</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-  <section class="seccion-principal">
-    <div class="contenido-principal">
-      <h1>Compite y Gana</h1>
+  <!-- HERO MEJORADO -->
+  <section class="seccion-principal hero">
+    <div class="contenido-principal animado">
+      <h1>🔥 Compite y Gana</h1>
       <p>Participa en torneos emocionantes con grandes premios.</p>
-      <a href="#torneos" class="boton">Participar</a>
+      <a href="#torneos" class="boton boton-llamativo">Participar</a>
     </div>
   </section>
+
+  <main class="contenido-pagina tarjeta-principal">
+    <section class="seccion-torneos">
+      <h1>Torneos Actuales</h1>
+      <p>Explora los torneos en curso y únete a la competencia.</p>
+
+      <div class="buscador-torneos">
+        <input type="text" placeholder="Buscar torneo por nombre o juego..." />
+        <button class="boton"><i class="fas fa-search"></i> Buscar</button>
+      </div>
+
+      <div class="filtro-torneos">
+        <label for="filtro">Filtrar por categoría:</label>
+        <select id="filtro">
+          <option>Todos</option>
+          <option>Shooter</option>
+          <option>MOBA</option>
+          <option>Battle Royale</option>
+          <option>Deportes</option>
+        </select>
+      </div>
+
+      <!-- TARJETAS CON ICONOS -->
+      <div class="tarjetas-torneos-mini">
+        <div class="tarjeta-mini icono-hover">
+          <i class="fas fa-fire icono-efecto"></i>
+          <h3>Arena Pro</h3>
+          <p>Competencia semanal de FPS</p>
+        </div>
+        <div class="tarjeta-mini icono-hover">
+          <i class="fas fa-dragon icono-efecto"></i>
+          <h3>League Clash</h3>
+          <p>Torneo 5v5 MOBA estratégico</p>
+        </div>
+        <div class="tarjeta-mini icono-hover">
+          <i class="fas fa-futbol icono-efecto"></i>
+          <h3>Fútbol eCup</h3>
+          <p>Duelo deportivo online 1v1</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <section id="nosotros" class="seccion">
     <h2>Sobre Nosotros</h2>
@@ -110,34 +107,32 @@
     </ul>
   </section>
 
-<section id="torneos" class="seccion oscuro">
-  <h2>Próximos Torneos</h2>
-  <div class="tarjetas-torneos">
-    <div class="tarjeta">
-      <img src="img/portada-val.png" alt="Torneo 1" />
-      <h3>Torneo de Verano</h3>
-      <p>Prepárate para competir en el torneo más esperado del año.</p>
-      <a href="torneo-verano.html" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
+  <section id="torneos" class="seccion oscuro">
+    <h2>Próximos Torneos</h2>
+    <div class="tarjetas-torneos">
+      <div class="tarjeta">
+        <img src="img/portada-val.png" alt="Torneo 1" />
+        <h3>Torneo de Verano</h3>
+        <p>Prepárate para competir en el torneo más esperado del año.</p>
+        <a href="torneo-verano.html" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
+      </div>
+      <div class="tarjeta">
+        <img src="img/portada-lol.png" alt="Torneo 2" />
+        <h3>Desafío Épico</h3>
+        <p>Reúne a tu equipo y demuestra tus habilidades.</p>
+        <a href="desafio-epico.html" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
+      </div>
+      <div class="tarjeta">
+        <img src="img/portada-fort.png" alt="Torneo 3" />
+        <h3>Batalla Rápida</h3>
+        <p>Un torneo relámpago con premios instantáneos.</p>
+        <a href="batalla-rapida.html" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
+      </div>
     </div>
-    <div class="tarjeta">
-      <img src="img/portada-lol.png" alt="Torneo 2" />
-      <h3>Desafío Épico</h3>
-      <p>Reúne a tu equipo y demuestra tus habilidades.</p>
-      <a href="desafio-epico.html" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
+    <div class="ver-mas-torneos">
+      <a class="boton" href="torneos.html">Ver más torneos</a>
     </div>
-    <div class="tarjeta">
-      <img src="img/portada-fort.png" alt="Torneo 3" />
-      <h3>Batalla Rápida</h3>
-      <p>Un torneo relámpago con premios instantáneos.</p>
-      <a href="batalla-rapida.html" class="boton" target="_blank" rel="noopener noreferrer">Inscribirse</a>
-    </div>
-  </div>
-  <div class="ver-mas-torneos">
-  <a class="boton" href="torneos.html">
-    Ver más torneos
-  </a>
-</div>
-</section>
+  </section>
 
   <section id="funcionamiento" class="seccion">
     <h2>Cómo Funciona</h2>
