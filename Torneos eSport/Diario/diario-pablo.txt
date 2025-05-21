@@ -8,3 +8,5 @@ Implementacion de nuevos directorios ajustes y redimensionamiento del css adici�
 Creación de un diseño para cliente en canva. Cursos de React.
 19/05/2025
 Empezamos el codigo del diseño propuesto por el cliente.
+21/05/2025
+Continuación de la pagina web.
