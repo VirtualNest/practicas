@@ -1,0 +1,168 @@
+/*--BIENVENIDO */
+
+.custom-button {
+      background: linear-gradient(to bottom, #d4b996, #a38a6f);
+      border: none;
+      color: white;
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin: 5px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .custom-button:hover {
+      background: linear-gradient(to bottom, #c3a67f, #8d745f);
+    }
+
+/*--SLIDE */
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    /* Tamaño máximo del carrusel */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 90%;
+        /* Más pequeño y responsivo en móviles */
+    }
+}
+
+/*--COMO JUGAR PARTE 2 */
+
+.text-narrow {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.custom-h3 {
+    margin-left: 1rem;
+    font-size: 1.75rem;
+}
+
+.btn-center {
+    display: block;
+    margin: 2rem auto 0;
+    width: auto;
+    text-align: center;
+}
+
+.video-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*-- EDUCACION Y CONSERVACION */
+
+.img-card {
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-img-overlay-custom {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.arrow-bottom-right {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+}
+
+.card-content {
+    z-index: 2;
+}
+
+.card-link-wrapper {
+    text-decoration: none;
+    color: white;
+}
+
+/*--FORMULARIO DE CONTACTO */
+
+.contact-section {
+    background-color: #d9c3aa;
+    color: #333;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+h3,
+h4,
+.h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.form-control,
+.form-select {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    height: auto;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+textarea.form-control {
+    resize: none;
+    min-height: 120px;
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
