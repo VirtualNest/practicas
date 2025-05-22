@@ -8,20 +8,32 @@
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-        <img src="img/fot4.png" alt="Logo Bereber">
-        <span>Bereber</span>
+  <header class="navbar navbar-expand-lg navbar-light  px-3 sticky-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/fot4.png" alt="Logo Bereber" width="40" height="40" class="me-2">
+      <span>Bereber</span>
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#como-se-juega">Cómo se juega</a></li>
+        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#educacion">Educación y Conservación</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#eventos">Eventos y Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contactos</a></li>
+      </ul>
     </div>
-    <nav class="nav-links">
-        <a href="#inicio">Inicio</a>
-        <a href="#historia">Historia</a>
-        <a href="#como-se-juega">Cómo se juega</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="#educacion">Educación y Conservación</a>
-        <a href="index.html#eventos">Eventos y Noticias</a>
-        <a href="#contacto">Contactos</a>
-    </nav>
+  </div>
 </header>
   <section class="hero-section">
   <div class="hero-content">
@@ -74,7 +86,7 @@
     </div>
   </section>
 
-  <section id="como-se-juega" class="bg-light py-5 text-center">
+  <section id="como-se-juega" class="py-5 text-center">
   <div class="container">
     <h2 class="mb-3 fw-bold">Cómo se juega</h2>
     <p>Se juega de la siguiente manera:</p>
@@ -221,7 +233,7 @@
     </div>
   </section>
 
-  <section id="educacion" class="bg-light py-5 text-center">
+  <section id="educacion" class=" py-5 text-center">
   <div class="container">
     <h2>Educación y Conservación</h2>
     <p>Promovemos el amor por la fauna y la naturaleza de Canarias a través de juegos educativos.</p>

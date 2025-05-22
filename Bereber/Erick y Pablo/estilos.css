@@ -300,7 +300,7 @@ section li {
 
 /* Envíos y métodos de pago */
 .info-envios-pago {
-    background-color: rgba(255, 255, 255, 0.15) !important; /* Semi-transparente */
+    
     padding: 60px 20px;
 }
 
@@ -410,6 +410,7 @@ footer,
     .button-primary {
         padding: 10px 20px;
         font-size: 0.95rem;
+        margin: 10px;
     }
 
     .custom-img {
@@ -445,6 +446,7 @@ footer,
 
     .producto-horizontal .card-body {
         align-items: center;
+        color: #ba9451;
     }
 
     .producto-horizontal .card-title,
@@ -457,6 +459,35 @@ footer,
         align-self: center;
     }
 }
+/* Fondo blanco y animación para el menú hamburguesa */
+@media (max-width: 991.98px) {
+  .custom-collapse {
+    position: absolute;
+    top: 100%; /* Se coloca justo debajo del navbar */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: slideIn 0.3s ease-in-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .navbar-nav .nav-link {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+}
 
 /* Productos horizontales */
 .producto-horizontal {
@@ -465,6 +496,7 @@ footer,
     gap: 20px;
     align-items: center;
     padding: 15px;
+    background-color: #f3d4a0;
 }
 
 .producto-horizontal img.card-img-top {
@@ -479,6 +511,7 @@ footer,
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .producto-horizontal .card-title,
@@ -490,4 +523,5 @@ footer,
 .producto-horizontal .btn {
     align-self: flex-start;
     margin-top: 10px;
+    background-color: #e0d4c6;
 }
