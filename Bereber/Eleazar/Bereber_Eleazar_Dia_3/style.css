@@ -1,0 +1,224 @@
+/*--BIENVENIDO */
+
+.custom-button {
+    background: linear-gradient(to bottom, #d4b996, #a38a6f);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:hover {
+    background: linear-gradient(to bottom, #c3a67f, #8d745f);
+}
+
+/*--HISTORIA */
+
+.historia-bereber-section {
+    background-color: #c2a178;
+    color: #212529;
+}
+
+.historia-bereber-section .card {
+    background-color: #fff4e4;
+}
+
+.historia-bereber-section .card-title {
+    color: #5e3d1c;
+}
+
+.video-highlight {
+    width: 100%;
+    max-width: 600px;
+    border: 4px solid #5e3d1c;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .video-highlight {
+        max-width: 90%;
+    }
+}
+
+/*--SLIDE */
+
+.carousel-container {
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-custom {
+    background-color: #d9c3aa;
+}
+
+.custom-carousel {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    overflow: visible;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.3;
+    transform: scale(0.9);
+}
+
+.carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.carousel-img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+@media (max-width: 768px) {
+    .custom-carousel {
+        padding: 0 1rem;
+        max-width: 90%;
+    }
+}
+
+/*--COMO JUGAR PARTE 2 */
+
+.bg-educadores {
+    background-color: #c2a178;
+}
+
+.video-highlight {
+    max-width: 280px;
+    width: 100%;
+    border: 4px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.bg-educadores h3 {
+    font-size: 1.9rem;
+}
+
+.bg-educadores p {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .video-highlight {
+        margin: 0 auto;
+    }
+}
+
+/*-- EDUCACION Y CONSERVACION */
+
+.educacion-conservacion {
+    background-color: #d9c3aa;
+}
+
+.img-card {
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-img-overlay-custom {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.arrow-bottom-right {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+}
+
+.card-content {
+    z-index: 2;
+}
+
+.card-link-wrapper {
+    text-decoration: none;
+    color: white;
+}
+
+/*--FORMULARIO DE CONTACTO */
+
+.contact-section {
+    background-color: #c2a178;
+    color: #333;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+h3,
+h4,
+.h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.form-control,
+.form-select {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    height: auto;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+textarea.form-control {
+    resize: none;
+    min-height: 120px;
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
