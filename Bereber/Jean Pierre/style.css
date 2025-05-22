@@ -6,17 +6,15 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
 /*La imagen la saqué de su Instagram, pero podría poner cualquier imagen*/
 header {
-    background: url('images/Captura\ de\ pantalla\ 2025-05-21\ 133320-1440x1080-artguru.png');
+    background: url('DDDDDDD.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-header {
     min-height: 100vh;
 }
 
@@ -34,6 +32,9 @@ img{
     justify-content: space-between;
     padding: 20px 0;
 }
+.menu-icono {
+    display: none; 
+}
 
 .logo{
    color: #EE13C4;
@@ -46,23 +47,45 @@ img{
     width: auto;
 }
 
-.navbar ul{
-   display: flex;
-   align-items: center;  
+/* Navbar */
+.navbar {
+    position: fixed;  
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: rgba(31, 12, 66, 0.9); 
+    padding: 10px 0;
+    z-index: 10;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.navbar ul li{
-padding: 0 20px;
-font-size: 20px;
+/* Asegúrate de que los enlaces dentro del navbar tengan el estilo adecuado */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar ul li a{
-color: #FFFFFF;
+.navbar ul li {
+    padding: 0 20px;
+    font-size: 20px;
 }
 
-.navbar ul li a:hover{
- color: black;
+.navbar ul li a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-weight: normal;
 }
+
+.navbar ul li a:hover {
+    color: #FFFFFF;
+}
+
 
 
 .header-content{
@@ -96,110 +119,235 @@ color: #FFFFFF;
     font-size: 18px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-}  
+} 
 
-
-/* Historia */
-.historia {
-    color: burlywood;
+/**/
+/* Asegúrate de que el contenedor no tenga márgenes */
+.header-right {
+    max-width: 300px; 
+    min-height: 200px;
+    background-color: #524CA9;
+    padding: 20px;
+    border-radius: 8px;
     text-align: center;
-    padding: 80px 20px;
-    font-family: 'Inter', sans-serif;
+    margin: 50px auto;
+    width: 100%;
+    box-sizing: border-box; 
+    overflow: hidden; 
 }
 
-.historia h2 {
-    font-size: 36px;
-    margin: 0;   
-    display: flex;
-    justify-content: center; 
-    text-align: center;  
-}
-
-
-.historia p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    color: black;
+/* Elimina márgenes extra de los elementos dentro del formulario */
+.header-right form {
+    margin: 0; 
+    padding: 0; 
 }
 
 
-.historia .btn {
-    margin-top: 20px;
-    color: black;
-    padding: 12px 30px;
-    border-radius: 15px;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background 0.3s ease, transform 0.3s ease;
+.header-right form input[type="email"], 
+.header-right form button {
+    margin: 0; 
+    padding: 10px;
 }
 
-.historia .btn:hover {
-    background: #1f0c42;
-}
-/*historia!*/
-
-
-
-
-/* ¿Cómo jugar? */
-.comojugar {
-    text-align: center;
-    padding: 80px 20px;
-    font-family: 'Inter', sans-serif;
-}
-
-.comojugar h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: burlywood;
+/**aqui el boton*/
+/* Elimina el espacio blanco debajo del botón */
+.header-right form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 0; 
 }
 
-.comojugar p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    color: black
+.header-right form button:hover {
+    background-color: rgba(31, 12, 66, 0.9);
 }
 
-.comojugar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.comojugar ul li {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #e5e5e5;
+/* Asegúrate de que los campos de texto tengan el mismo formato */
+.header-right form input[type="email"] {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.header-right form .checkbox-container {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.header-right form .checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(0.8);
+}
+
+.header-right form .checkbox-container a {
+    color: #1f0c42;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.header-right form .checkbox-container a:hover {
+    text-decoration: underline;
+}
+/**!/
+
+
+
+/*historia*/
+.historia {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+    background-color: #F5F1F3;
+   
+}
+
+/* Este es el cuadro que imita un formulario */
+.historia-cuadro {
+    background-image: url('images/can.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: darken; 
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+
+
+/* Título centrado */
+.historia-cuadro h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color:#FFFFFF;
+}
+
+/* Contenido: texto + imagen uno al lado del otro */
+.historia-cuadro .contenido {
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
-.comojugar ul li::before {
-    content: "✅";
-    margin-right: 10px;
-    color: black; 
+/* Texto a la izquierda */
+.historia-cuadro .texto {
+    flex: 1;
 }
-/*como jugar!*/
+
+.historia-cuadro .texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+/* Imagen a la derecha */
+.historia-cuadro .imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.historia-cuadro .imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+/*historia*/
+
+
+/*comojugar*/
+#comojugar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background: #F5F1F3;
+}
+
+#comojugar h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contenido {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+}
+
+.texto {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left; 
+  padding-right: 20px;
+   font-family: 'Bebas Neue' ,sans-serif;
+}
+
+.video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.video video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.video-pequeno {
+  width: 300px;
+  height: auto; 
+  border-radius: 10px; 
+}
+
+.video {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+}
+
+.video video {
+  max-width: 50%;
+  width: 300px;
+  height: auto;
+}
+/*comojugar*!/
 
 
 /*contacto*/
 .contacto {
-    text-align: center;
     padding: 60px 20px;
-    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background-color: #F5F1F3;  
 }
 
 .contacto h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: burlywood;
+    color: black;
 }
+
 
 .contacto p {
     font-size: 16px;
@@ -207,120 +355,153 @@ color: #FFFFFF;
     color: #666;
 }
 
-
-
-/* Formulario */
 .contacto form {
-    max-width: 350px;  
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;  
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;  
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(233, 134, 53, 0.795);  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }
 
+/* Contenedor de campos de formulario */
+.contacto .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+    width: 100%;
+}
+
+/* Estilos para los campos de texto (inputs y textarea) */
 .contacto input,
 .contacto textarea {
-    padding: 8px;
-    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #fafafa;
     color: #333;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
 }
-
 
 .contacto input:focus,
 .contacto textarea:focus {
-    border-color:black;
+    border-color: #1f0c42; 
     outline: none;
 }
 
+/* Estilo del botón */
 .contacto button {
-    padding: 10px;
+    padding: 12px 30px; 
     border: none;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 18px;  
     color: white;
+    background-color: #08020c;  /*color boton*/
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+    margin-top: 20px;   
 }
 
-
-.contacto button:hover {
-    background: #1f0c42;
+.contacto button:focus {
+    outline: none;  
+    border: 2px solid #1f0c42; 
 }
-
 
 
 /* Sección Tienda */
 .tienda {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: #F5F1F3;
     text-align: center;
+    min-height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .tienda h2 {
     font-size: 36px;  
     margin-bottom: 40px;  
-    color: burlywood;  
+    color: black;  
 }
 
-
+/* Productos - Mostrar en forma de grid */
 .productos {
     display: grid;
     gap: 20px;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr); /* Dos productos por fila */
+    justify-items: center; /* Centra los productos */
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
-
+/* Estilo de cada producto */
 .producto {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px;
+    padding: 15px;  
+    width: 250px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .producto:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-
+/* Estilo de las imágenes de los productos */
 .producto img {
-    width: 60%;
+    width: 100%;
+    max-width: 120px;  
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
     object-fit: cover;
 }
 
+
+/* Estilo del título de los productos */
 .producto h3 {
-    font-size: 24px;
+    font-size: 20px;
     color: #1f0c42;
     margin-bottom: 10px;
 }
 
+/* Descripción de los productos */
 .producto p {
-    font-size: 16px;
+    font-size: 14px;  
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+/* Precio de los productos */
 .precio {
-    font-size: 18px;
+    font-size: 16px; 
     font-weight: bold;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+/* Estilo del botón */
 .btn {
     background-color: #0a0008;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 10px 20px; 
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 14px; 
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -328,43 +509,53 @@ color: #FFFFFF;
 .btn:hover {
     background-color: #1f0c42;
 }
-/*tienda*/
+
+
+
 
 
 
 /*footer*/
 footer {
-    background-color: #1f0c42;
+    background-color:rgba(31, 12, 66, 0.9);
     color: white;
-    padding: 40px 20px;
-    font-family: 'Inter', sans-serif;
+    padding: 20px 0;  
     text-align: center; 
+    width: 100%; 
+    position: relative; 
+    box-sizing: border-box;
 }
 
 .footer-container {
     display: flex;
-    flex-direction: column; 
+    justify-content: center;  
     align-items: center;     
-    gap: 20px;             
+    gap: 20px;               
+    max-width: 1200px;        
+    margin: 0 auto;          
+    width: 100%;
 }
 
 footer .spon {
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px; 
     margin: 0;
+    flex-basis: 100%; 
+    text-align: center; 
 }
 
 .social-icons {
     display: flex;
     justify-content: center; 
     align-items: center;      
-    gap: 25px;                
+    gap: 25px;
+    flex-basis: auto; 
 }
 
 .social-icons a img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -374,12 +565,27 @@ footer .spon {
 }
 
 .twitch-icon img {
-    width: 30px !important; 
-    height: 30px !important; 
+    width: 40px !important;
+    height: 40px !important;
 }
 
-.header-img {
-    flex-basis: 50%;
+/* footer para que se quede en la parte inferior de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  
 }
+
+.main-content {
+    flex: 1; 
+}
+
+
+footer {
+    margin-top: auto; /*lo colaca al final*/
+}
+
 /*footer*/
+
+
 
