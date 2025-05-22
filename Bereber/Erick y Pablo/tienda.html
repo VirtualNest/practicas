@@ -1,0 +1,199 @@
+<!-- index-tienda.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bereber - Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/fot4.png" alt="Logo Bereber">
+            <span>Bereber</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="#historia">Historia</a>
+            <a href="#como-se-juega">Cómo se juega</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="#educacion">Educación y Conservación</a>
+            <a href="index.html#eventos">Eventos y Noticias</a>
+            <a href="#contacto">Contactos</a>
+            <a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+
+        </nav>
+    </header>
+
+    <!-- Banner de promoción -->
+    <section class="bg-warning text-center py-3">
+        <strong>¡Oferta limitada!</strong> Envío gratis en pedidos mayores a $30.000 🛒
+    </section>
+
+    <!-- Filtros visuales -->
+    <section class="container my-4">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-4">
+                <label for="filtroCategoria" class="form-label">Filtrar por categoría:</label>
+                <select class="form-select" id="filtroCategoria">
+                    <option selected>Todos</option>
+                    <option value="juegos">Juegos</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="arte">Arte</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="ordenar" class="form-label">Ordenar por:</label>
+                <select class="form-select" id="ordenar">
+                    <option value="popularidad">Popularidad</option>
+                    <option value="precioMenor">Precio: menor a mayor</option>
+                    <option value="precioMayor">Precio: mayor a menor</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="tienda" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Productos Destacados</h2>
+
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="card producto-horizontal">
+                        <img src="img/fot1.png" class="card-img-top" alt="Juego base">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego Base 🃏</h5>
+                            <p class="card-text">Incluye todo lo necesario para comenzar.</p>
+                            <p class="text-success fw-bold">$24.99</p>
+                            <button class="btn btn-outline-primary btn-add-cart" data-nombre="Juego Base"
+                                data-precio="24.99">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <div class="card producto-horizontal">
+                        <img src="img/fot1.png" class="card-img-top" alt="Tapete">
+                        <div class="card-body">
+                            <h5 class="card-title">Tapete 🧻</h5>
+                            <p class="card-text">Tapete ilustrado exclusivo.</p>
+                            <p class="text-success fw-bold">$14.50</p>
+                            <button class="btn btn-outline-primary btn-add-cart" data-nombre="Tapete"
+                                data-precio="14.50">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <div class="card producto-horizontal">
+                        <img src="img/fot1.png" class="card-img-top" alt="Stickers">
+                        <div class="card-body">
+                            <h5 class="card-title">Stickers 🏷️</h5>
+                            <p class="card-text">Paquete de 10 unidades.</p>
+                            <p class="text-success fw-bold">$3.99</p>
+                            <button class="btn btn-outline-primary btn-add-cart" data-nombre="Stickers"
+                                data-precio="3.99">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <div class="card producto-horizontal">
+                        <img src="img/fot1.png" class="card-img-top" alt="Ilustraciones">
+                        <div class="card-body">
+                            <h5 class="card-title">Ilustraciones 🎨</h5>
+                            <p class="card-text">Obras originales de artistas bereberes.</p>
+                            <p class="text-success fw-bold">$9.99</p>
+                            <button class="btn btn-outline-primary btn-add-cart" data-nombre="Ilustraciones"
+                                data-precio="9.99">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <div class="card producto-horizontal">
+                        <img src="img/fot1.png" class="card-img-top" alt="Cartas adicionales">
+                        <div class="card-body">
+                            <h5 class="card-title">Cartas Adicionales 🃏</h5>
+                            <p class="card-text">Expansión de 50 cartas coleccionables.</p>
+                            <p class="text-success fw-bold">$12.99</p>
+                            <button class="btn btn-outline-primary btn-add-cart" data-nombre="Cartas adicionales"
+                                data-precio="12.99">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas de clientes -->
+    <section class="container my-5">
+        <h3 class="text-center mb-4">Lo que dicen nuestros clientes</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"¡El juego es increíble! A mis hijos les encantó."</p>
+                    <footer class="blockquote-footer">Ana, cliente verificado</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"Buena calidad y las ilustraciones son hermosas."</p>
+                    <footer class="blockquote-footer">Carlos M.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"Muy buena atención y entrega rápida."</p>
+                    <footer class="blockquote-footer">Lucía R.</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="bg-white py-5">
+        <div class="container">
+            <h4 class="text-center mb-4">¿Tienes preguntas sobre tu compra?</h4>
+            <form class="row g-3 justify-content-center">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Nombre completo" required>
+                </div>
+                <div class="col-md-5">
+                    <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                </div>
+                <div class="col-md-10">
+                    <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-success w-100">Enviar consulta</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer simple -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 Bereber. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
