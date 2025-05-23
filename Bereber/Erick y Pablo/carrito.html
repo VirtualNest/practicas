@@ -19,21 +19,35 @@
     }
   </style>
 </head>
-<body>
-    <header class="navbar">
-    <div class="logo">
-        <img src="img/fot4.png" alt="Logo Bereber">
-        <span>Bereber</span>
+<body class="d-flex flex-column min-vh-100">
+    <header class="navbar navbar-expand-lg navbar-light  px-3 sticky-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/fot4.png" alt="Logo Bereber" width="40" height="40" class="me-2">
+      <span>Bereber</span>
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="info.html">Nuestro Proyecto</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#como-se-juega">Cómo se juega</a></li>
+        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#educacion">Educación y Conservación</a></li>
+        <li class="nav-item"><a class="nav-link" href="noticias.html">Eventos y Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contactos</a></li>
+      </ul>
+      <a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
     </div>
-    <nav class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="#historia">Historia</a>
-        <a href="#como-se-juega">Cómo se juega</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="#educacion">Educación y Conservación</a>
-        <a href="#eventos">Eventos y Noticias</a>
-        <a href="#contacto">Contactos</a>
-    </nav>
+  </div>
+</header>
 </header>
   <div class="container py-5">
     <h2 class="mb-4">🛒 Tu Carrito</h2>
@@ -43,69 +57,23 @@
       <button class="btn btn-success mt-3" id="finalizarCompra">Finalizar compra</button>
     </div>
   </div>
-
-  <script>
-    // Obtener el carrito desde localStorage
-    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-
-    const contenedor = document.getElementById('lista-carrito');
-    const total = document.getElementById('total-carrito');
-
-    function renderizarCarrito() {
-      contenedor.innerHTML = '';
-      let totalPrecio = 0;
-
-      if (carrito.length === 0) {
-        contenedor.innerHTML = '<p class="text-muted">Tu carrito está vacío.</p>';
-        total.textContent = '0';
-        return;
-      }
-
-      carrito.forEach((producto, index) => {
-        const div = document.createElement('div');
-        div.className = 'producto-item';
-
-        div.innerHTML = `
-          <span>${producto.nombre}</span>
-          <span>$${producto.precio.toLocaleString()}</span>
-          <button class="btn btn-sm btn-danger" data-index="${index}">Eliminar</button>
-        `;
-
-        contenedor.appendChild(div);
-        totalPrecio += producto.precio;
-      });
-
-      total.textContent = totalPrecio.toLocaleString();
-
-      // Asignar eventos a botones de eliminar
-      document.querySelectorAll('[data-index]').forEach(boton => {
-        boton.addEventListener('click', () => {
-          const index = parseInt(boton.dataset.index);
-          carrito.splice(index, 1);
-          localStorage.setItem('carrito', JSON.stringify(carrito));
-          renderizarCarrito();
-        });
-      });
-    }
-
-    // Finalizar compra
-    document.getElementById('finalizarCompra').addEventListener('click', () => {
-      if (carrito.length === 0) {
-        alert("Tu carrito está vacío.");
-        return;
-      }
-
-      const confirmacion = confirm("¿Deseas finalizar tu compra?");
-      if (confirmacion) {
-        localStorage.removeItem('carrito');
-        carrito = [];
-        renderizarCarrito();
-        alert("¡Gracias por tu compra!");
-      }
-    });
-
-    // Inicial
-    renderizarCarrito();
+<footer class="text-white text-center py-3 mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Bereber. Todos los derechos reservados.</p>
+      
+    </div>
+    <nav>
+    <a href="/privacidad.html">Política de Privacidad</a> | 
+    <a href="/terminos.html">Términos y Condiciones</a>
+  </nav>
+  <div class="social-icons mt-2">
+    <a href="#" aria-label="Facebook"><img src="img/fotface.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/berebercanarias/" aria-label="Instagram"><img src="img/fotinsta.png" alt="Instagram"></a>
+    <a href="#" aria-label="Twitter"><img src="img/fotx.png" alt="Twitter"></a>
+  </div>
+  </footer>
+  <script src="script.js">
+    
   </script>
 </body>
 </html>

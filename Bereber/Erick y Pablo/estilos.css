@@ -24,7 +24,36 @@ body::before {
     background: rgba(255, 255, 255, 0.15); /* Muy transparente */
     z-index: -1;
 }
+.producto-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.7); /* Blanco con transparencia */
+  border-radius: 8px; /* Bordes redondeados para mejor estilo */
+  margin-bottom: 10px; /* Separación entre productos */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para levantar el cuadro */
+}
 
+.producto-item > span:nth-child(1) {
+  flex: 2;
+  color: #3e3e3e; /* Color oscuro para el texto */
+  font-weight: 600;
+}
+
+.producto-item > span:nth-child(2) {
+  flex: 1;
+  text-align: right;
+  color: #3e3e3e;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.producto-item > button {
+  flex: 0 0 auto;
+}
 /* Navbar */
 .navbar {
     position: fixed;
@@ -70,7 +99,7 @@ body::before {
 .hero-content {
     max-width: 800px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.15) !important; /* Más transparente */
+    background-color: rgba(255, 255, 255,0.658) !important; /* Más transparente */
     border-radius: 12px;
     padding: 30px;
     
@@ -133,7 +162,7 @@ header p {
 
 /* Tienda */
 #tienda .row > div {
-    background-color: rgba(0, 0, 0, 0.15) !important; /* Más transparente */
+    background-color: rgba(255, 255, 255, 0.719) !important; /* Más transparente */
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
@@ -162,7 +191,39 @@ header p {
 #tienda .button-primary {
     margin-top: 10px;
 }
+/* Tienda */
+#productos .row > div {
+    background-color: rgba(255, 255, 255, 0.719) !important; /* Más transparente */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    color: #000000;
+    width: 400px;
+    height: 450px;
+}
 
+#productos .row > div:hover {
+    transform: scale(1.02);
+}
+
+#productos h5 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+#productos img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#productos .button-primary {
+    margin-top: 10px;
+}
 /* Botones */
 .button-primary {
     background-color: #e6b35c;
@@ -195,6 +256,10 @@ header p {
 
 .enlaces-utiles li {
     margin: 0;
+}
+#productos .row > div {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .enlaces-utiles a {
@@ -287,11 +352,12 @@ section li {
 
 /* Info cards con fondo muy tenue */
 .info-card {
-    background-color: rgba(255, 255, 255, 0.15) !important; /* Semi-transparente */
+    background-color: rgba(255, 255, 255, 0.658) !important; /* Semi-transparente */
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 30px 20px;
-    max-width: 450px;
+    margin: 10px;
+    max-width: 400px;
     width: 100%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -315,7 +381,7 @@ section li {
 
 .info-box-texto {
     border: 2px solid #e0d4c6;
-    background-color: rgba(255, 255, 255, 0.15) !important; /* Semi-transparente */
+    background-color: rgba(255, 255, 255, 0.658) !important; /* Semi-transparente */
     padding: 12px;
     border-radius: 10px;
     font-weight: 600;
@@ -373,7 +439,7 @@ footer,
 }
 
 .custom-box {
-    background-color: rgba(255, 255, 255, 0.15) !important; /* Semi-transparente */
+    background-color: rgba(255, 255, 255, 0.658) !important; /* Semi-transparente */
     border: 2px solid #e0d4c6;
     border-radius: 8px;
     padding: 10px 20px;
@@ -524,4 +590,66 @@ footer,
     align-self: flex-start;
     margin-top: 10px;
     background-color: #e0d4c6;
+}
+/* Sección de Equipo */
+#equipo {
+    background-color: rgba(255, 255, 255, 0.658) !important; /* Semi-transparente para fondo */
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+#equipo h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3e3e3e;
+}
+
+#equipo img {
+    border: 4px solid #e0d4c6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#equipo h5 {
+    font-weight: 700;
+    color: #3e3e3e;
+    margin-top: 10px;
+}
+
+#equipo p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Galería de bocetos */
+.gallery img {
+    border-radius: 10px;
+    border: 2px solid #e0d4c6;
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer: enlaces y redes sociales */
+footer nav a {
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    transition: transform 0.2s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
 }

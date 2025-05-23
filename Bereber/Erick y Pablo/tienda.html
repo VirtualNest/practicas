@@ -11,23 +11,34 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="img/fot4.png" alt="Logo Bereber">
-            <span>Bereber</span>
-        </div>
-        <nav class="nav-links">
-            <a href="index.html">Inicio</a>
-            <a href="#historia">Historia</a>
-            <a href="#como-se-juega">Cómo se juega</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="#educacion">Educación y Conservación</a>
-            <a href="index.html#eventos">Eventos y Noticias</a>
-            <a href="#contacto">Contactos</a>
-            <a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+    <header class="navbar navbar-expand-lg navbar-light  px-3 sticky-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/fot4.png" alt="Logo Bereber" width="40" height="40" class="me-2">
+      <span>Bereber</span>
+    </a>
 
-        </nav>
-    </header>
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="info.html">Nuestro Proyecto</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#como-se-juega">Cómo se juega</a></li>
+        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#educacion">Educación y Conservación</a></li>
+        <li class="nav-item"><a class="nav-link" href="noticias.html">Eventos y Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contactos</a></li>
+      </ul>
+      <a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+    </div>
+  </div>
+</header>
 
     <!-- Banner de promoción -->
     <section class="bg-warning text-center py-3">
@@ -167,7 +178,7 @@
     </section>
 
     <!-- Formulario de contacto -->
-    <section class="bg-white py-5">
+    <section class=" py-5">
         <div class="container">
             <h4 class="text-center mb-4">¿Tienes preguntas sobre tu compra?</h4>
             <form class="row g-3 justify-content-center">
@@ -188,8 +199,17 @@
     </section>
 
     <!-- Footer simple -->
-    <footer class="bg-dark text-white text-center py-3 mt-4">
+    <footer class=" text-white text-center py-3 mt-4">
         <p>&copy; 2025 Bereber. Todos los derechos reservados.</p>
+        <nav>
+    <a href="/privacidad.html">Política de Privacidad</a> | 
+    <a href="/terminos.html">Términos y Condiciones</a>
+  </nav>
+  <div class="social-icons mt-2">
+    <a href="#" aria-label="Facebook"><img src="img/fotface.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/berebercanarias/" aria-label="Instagram"><img src="img/fotinsta.png" alt="Instagram"></a>
+    <a href="#" aria-label="Twitter"><img src="img/fotx.png" alt="Twitter"></a>
+  </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
