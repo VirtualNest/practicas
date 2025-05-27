@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    
     <title>Document</title>
 </head>
 <body>
@@ -25,15 +24,14 @@
                 <ul>
                     <li><a href="#container">Inicio</a></li>
                     <li><a href="#historia">Historia</a></li>
+                    <li><a href="#clases">Clases</a></li>
                     <li><a href="#comojugar">Cómo jugar</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
                     <li><a href="#tienda">Tienda</a></li>
-                    
                 </ul>
             </nav>
         </div>
-
-       
 
         <div class="header-content" >
             <div class="header-txt">
@@ -53,11 +51,9 @@
                     <input type="email" placeholder="Introduce tu correo electrónico" required>
                     <div class="checkbox-container">
                         <input type="checkbox" id="accept-terms" required>
-
                         <label for="accept-terms">
                             Acepto los <a href="#">Términos del servicio</a> y la <a href="#">Política de privacidad</a>.
                         </label>
-
                     </div>
                      <button type="submit">Suscribirse</button>
                  </form>
@@ -83,37 +79,50 @@
     </div>
     </section>
 
+    <!---->
+    <section id="clases" class="clases">
+        <h2>Clases</h2>
+        <div class="clase">
+            <h3>Animales endémicos</h3>
+            <img src="images/carta_azul.png" alt="animales endémicos">
+        </div>
+
+        <div class="clase">
+            <h3>Especies invasoras</h3>
+            <img src="images/carta_amarilla.png" alt="especies invasoras">
+        </div>
+
+        <div class="clase">
+           <h3>Únicas</h3>
+           <img src="images/carta_blanca_2.png" alt="carta de un solo uso">
+        </div>
+    </section>
+
+
+    <section id="comojugar">
+       <h2>¿Cómo jugar?</h2>
+       <div class="contenido">
+        <div class="texto">
+           <p>¿Querían una explicación de Bereber? ¡Pues aquí la tienen! Cómo jugar al modo exploración.</p>
+           <p>En <strong>Bereber y la Fauna de Canarias</strong> eres un explorador que debe restaurar su Reserva Natural, 
+           conseguir especies endémicas y evitar invasoras.</p>
+           <ul>
+            <li>✅ Fácil de aprender y profunda.</li>
+            <li>✅ Ideal para amantes de la naturaleza.</li>
+            <li>✅ Edición especial en preventa.</li>
+           </ul>
+        </div>
+
+        <div class="video">
+            <video controls>
+                <source src="images/Como Jugar.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+    </section>
 
 
 
-<section id="comojugar">
-  <h2>¿Cómo jugar?</h2>
-  <div class="contenido">
-    <div class="texto">
-      <p>¿Querían una explicación de Bereber? ¡Pues aquí la tienen! Cómo jugar al modo exploración.</p>
-      <p>En <strong>Bereber y la Fauna de Canarias</strong> eres un explorador que debe restaurar su Reserva Natural, 
-      conseguir especies endémicas y evitar invasoras.</p>
-      <ul>
-        <li>✅ Fácil de aprender y profunda.</li>
-        <li>✅ Ideal para amantes de la naturaleza.</li>
-        <li>✅ Edición especial en preventa.</li>
-      </ul>
-    </div>
-    <div class="video">
-      <video controls>
-        <source src="images/Como Jugar.mp4" type="video/mp4">
-        Tu navegador no soporta el formato de video.
-      </video>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-   
-    
     <section id="contacto" class="contacto">
     <form>
         <div class="form-fields">
@@ -126,15 +135,130 @@
     </form>
     </section>
 
+    <section id="noticias" class="noticias">
+    <h2>Noticias</h2>
+    <div class="videos">
+      <video controls>
+        <source src="images/" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="images/" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="images/" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="images/" type="video/mp4">
+      </video>
+    </div>
+    </section>
+
+
+
+    <!--
+    Estaba haciendo otra estilo de tienda con un scrip , como la otra tienda se ve
+    muy simple.
+    -->
+    <!--
+    <section id="tienda" class="tienda">
+    <h2>Tienda</h2>
+    <div class="swiper mySwiper">
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo-insta.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>€10</span>
+                    <h3>Producto 1</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Aspernatur quas facere quae fugit odio porro impedit dignissimos blanditiis 
+                        tempore voluptate corporis maxime autem a delectus, ipsam, nesciunt, 
+                        harum nobis accusamus?
+                    </p>
+                </div>
+                <div class="product-img">
+                    <img src="images/fot1.png">
+                </div>
+
+            </div>
+            <button class="btn">Añadir al carrito</button>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo-insta.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>€12.99</span>
+                    <h3>Producto 2</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Aspernatur quas facere quae fugit odio porro impedit dignissimos blanditiis 
+                        tempore voluptate corporis maxime autem a delectus, ipsam, nesciunt, 
+                        harum nobis accusamus?
+                    </p>
+                </div>
+                <div class="product-img">
+                    <img src="images/fot1.png">
+                </div>
+
+            </div>
+            <button class="btn">Añadir al carrito</button>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="icons">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                <img src="images/logo-insta.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>€17.99</span>
+                    <h3>Producto 3</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Aspernatur quas facere quae fugit odio porro impedit dignissimos blanditiis 
+                        tempore voluptate corporis maxime autem a delectus, ipsam, nesciunt, 
+                        harum nobis accusamus?
+                    </p>
+                </div>
+                <div class="product-img">
+                    <img src="images/fot1.png">
+                </div>
+
+            </div>
+            <button class="btn">Añadir al carrito</button>
+        </div>
+
+    </div>
+    </section>-->
+
+    <!--
+    <button class="btn">Añadir al carrito</button>-->
+
+
     <section id="tienda" class="tienda">
     <h2>Tienda</h2>
     <div class="productos">
+
         <div class="producto">
             <img src="images/fot1.png" alt="Producto 1">
             <h3>Producto 1</h3>
             <p>Descripción del producto 1.</p>
             <p class="precio">€10.99</p>
             <button class="btn">Añadir al carrito</button>
+
         </div>
 
         <div class="producto">
@@ -146,7 +270,7 @@
         </div>
 
         <div class="producto">
-            <img src="images/fot1.png" alt="Producto 2">
+            <img src="images/fot1.png" alt="Producto 3">
             <h3>Producto 3</h3>
             <p>Descripción del producto 3.</p>
             <p class="precio">€20.99</p>
@@ -154,7 +278,7 @@
         </div>
 
         <div class="producto">
-            <img src="images/fot1.png" alt="Producto 2">
+            <img src="images/fot1.png" alt="Producto 4">
             <h3>Producto 4</h3>
             <p>Descripción del producto 4.</p>
             <p class="precio">€24.99</p>
@@ -185,11 +309,5 @@
         </div>
     </div>
     </footer>
-
-
-
- 
-
-    
 </body>
 </html>
