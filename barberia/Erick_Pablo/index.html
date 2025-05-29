@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="estilos.css" />
 </head>
+
 <body>
 
   <!-- HEADER -->
@@ -16,7 +18,8 @@
         <img src="img/logo.png" alt="Logo Barbería" height="45" style="border-radius: 8px;" />
         <span class="fw-bold fs-4 text-warning">Barbería Segura</span>
       </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -41,7 +44,8 @@
 
       <!-- Carrusel izquierdo -->
       <div class="col-lg-4 d-none d-lg-block">
-        <div id="sideCarouselLeft" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4000">
+        <div id="sideCarouselLeft" class="carousel slide carousel-fade h-100" data-bs-ride="carousel"
+          data-bs-interval="4000">
           <div class="carousel-inner h-100">
             <div class="carousel-item active h-100">
               <img src="img/hero4.png" class="d-block w-100 object-contain bg-black" alt="Lado 1" />
@@ -52,7 +56,8 @@
 
       <!-- Carrusel central -->
       <div class="col-lg-4 col-12 position-relative">
-        <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4000">
+        <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel"
+          data-bs-interval="4000">
           <div class="carousel-inner h-100">
             <div class="carousel-item active">
               <img src="img/hero1.png" class="d-block w-100 hero-img" alt="Hero 1" />
@@ -74,7 +79,8 @@
 
       <!-- Carrusel derecho -->
       <div class="col-lg-4 d-none d-lg-block">
-        <div id="sideCarouselRight" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4000">
+        <div id="sideCarouselRight" class="carousel slide carousel-fade h-100" data-bs-ride="carousel"
+          data-bs-interval="4000">
           <div class="carousel-inner h-100">
             <div class="carousel-item active h-100">
               <img src="img/hero5.png" class="d-block w-100 object-contain bg-black" alt="Lado 2" />
@@ -93,25 +99,25 @@
     </div>
   </section>
 
-<section class="py-5 bg-secondary text-white">
-  <div class="container">
-    <h2 class="mb-4 text-center">Nuestros Servicios</h2>
-    <div class="row g-4 text-center">
-      <div class="col-12 col-md-4">
-        <h4>Corte Clásico</h4>
-        <p>Un look limpio y atemporal que nunca pasa de moda.</p>
-      </div>
-      <div class="col-12 col-md-4">
-        <h4>Fade & Degradados</h4>
-        <p>Especialistas en cortes modernos y estilos personalizados.</p>
-      </div>
-      <div class="col-12 col-md-4">
-        <h4>Barba y Afeitado</h4>
-        <p>Diseño, perfilado y cuidado de barba profesional.</p>
+  <section class="py-5 bg-secondary text-white">
+    <div class="container">
+      <h2 class="mb-4 text-center">Nuestros Servicios</h2>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-md-4">
+          <h4>Corte Clásico</h4>
+          <p>Un look limpio y atemporal que nunca pasa de moda.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4>Fade & Degradados</h4>
+          <p>Especialistas en cortes modernos y estilos personalizados.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4>Barba y Afeitado</h4>
+          <p>Diseño, perfilado y cuidado de barba profesional.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -122,20 +128,26 @@
       <div id="cortesCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/hero6.png" class="d-block w-100 rounded shadow" alt="Corte 1" />
+            <img src="img/hero6.png" class="rounded shadow" alt="Corte 1" />
           </div>
           <div class="carousel-item">
-            <img src="img/hero7.png" class="d-block w-100 rounded shadow" alt="Corte 2" />
+            <img src="img/hero7.png" class="rounded shadow" alt="Corte 2" />
           </div>
           <div class="carousel-item">
-            <img src="img/hero9.png" class="d-block w-100 rounded shadow" alt="Corte 4" />
+            <img src="img/hero9.png" class="rounded shadow" alt="Corte 4" />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#cortesCarousel" data-bs-slide="prev" aria-label="Anterior">
-          <span class="carousel-control-prev-icon"></span>
+
+        <!-- Botón anterior -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#cortesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#cortesCarousel" data-bs-slide="next" aria-label="Siguiente">
-          <span class="carousel-control-next-icon"></span>
+
+        <!-- Botón siguiente -->
+        <button class="carousel-control-next" type="button" data-bs-target="#cortesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
     </div>
@@ -145,7 +157,8 @@
   <section id="cita" class="py-5 bg-dark text-white">
     <div class="container">
       <h2 class="text-center mb-4">Pide tu cita online</h2>
-      <form action="mailto:info@segurabarberia.com" method="POST" enctype="text/plain" class="mx-auto" style="max-width: 600px;">
+      <form action="mailto:info@segurabarberia.com" method="POST" enctype="text/plain" class="mx-auto"
+        style="max-width: 600px;">
         <div class="mb-3">
           <label for="nombre" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="nombre" name="nombre" required />
@@ -163,14 +176,11 @@
           <input type="date" class="form-control" id="fecha" name="fecha" required />
         </div>
         <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="mb-3">
             <label for="horaInicio" class="form-label">Hora de inicio</label>
             <input type="time" class="form-control" id="horaInicio" name="horaInicio" required />
           </div>
-          <div class="col-md-6 mb-3">
-            <label for="horaFin" class="form-label">Hora de fin</label>
-            <input type="time" class="form-control" id="horaFin" name="horaFin" required />
-          </div>
+
         </div>
         <div class="mb-3">
           <label for="mensaje" class="form-label">Mensaje adicional</label>
@@ -183,33 +193,30 @@
     </div>
   </section>
 
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-4 text-center">¿Dónde estamos?</h2>
-    <div class="row map-image-row">
-      <div class="col-md-6 mb-4">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.8975186749513!2d-15.4376719!3d28.1144665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40954d64b7cd8d%3A0xf4d05720ab4cb205!2sC.%20V%C3%ADctor%20Hugo%2C%2063%2C%2035006%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1716834760000!5m2!1ses!2ses" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Ubicación Barbería Segura"
-        ></iframe>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">¿Dónde estamos?</h2>
+      <div class="row map-image-row">
+        <div class="col-md-6 mb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.8975186749513!2d-15.4376719!3d28.1144665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40954d64b7cd8d%3A0xf4d05720ab4cb205!2sC.%20V%C3%ADctor%20Hugo%2C%2063%2C%2035006%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1716834760000!5m2!1ses!2ses"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Barbería Segura"></iframe>
+        </div>
+        <div class="col-md-6 mb-4 d-flex flex-column">
+          <img src="img/barberia.png" alt="Barbería Segura" class="img-fluid rounded shadow" />
+        </div>
       </div>
-      <div class="col-md-6 mb-4 d-flex flex-column">
-        <img src="img/barberia.png" alt="Barbería Segura" class="img-fluid rounded shadow" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <p class="text-white bg-dark p-3 rounded mt-3 text-center">
-          Nuestra barbería está ubicada en el corazón de Las Palmas, ofreciendo un ambiente acogedor y profesional. Ven a visitarnos y disfruta de un servicio personalizado con los mejores expertos en cuidado masculino.
-        </p>
+      <div class="row">
+        <div class="col-12">
+          <p class="text-white bg-dark p-3 rounded mt-3 text-center">
+            Nuestra barbería está ubicada en el corazón de Las Palmas, ofreciendo un ambiente acogedor y profesional.
+            Ven a visitarnos y disfruta de un servicio personalizado con los mejores expertos en cuidado masculino.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -222,12 +229,13 @@
       <p>Tel: 658 65 31 17 | Email: info@segurabarberia.com</p>
       <p>
         Síguenos en
-        <a href="https://www.instagram.com/segurabarberia/" target="_blank" rel="noopener noreferrer" class="text-warning text-decoration-none">Instagram</a>
+        <a href="https://www.instagram.com/segurabarberia/" target="_blank" rel="noopener noreferrer"
+          class="text-warning text-decoration-none">Instagram</a>
       </p>
     </div>
   </footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const heroCarousel = document.querySelector('#heroCarousel');
     if (heroCarousel) {
@@ -238,9 +246,11 @@
         wrap: true
       });
     }
-</script>
-  <a href="https://wa.me/34658653117" class="btn btn-success position-fixed bottom-0 end-0 m-4 rounded-circle" style="z-index: 1000;" target="_blank" rel="noopener noreferrer">
-    <img src="img/whatsapp-icon.png" alt="WhatsApp" style="width: 40px;" />
+  </script>
+  <a href="https://wa.me/34658653117" class="btn btn-success position-fixed bottom-0 end-0 m-4 rounded-circle"
+    style="z-index: 1000;" target="_blank" rel="noopener noreferrer">
+    <img src="img/whatsapp.png" alt="WhatsApp" style="width: 40px;" />
   </a>
 </body>
+
 </html>
