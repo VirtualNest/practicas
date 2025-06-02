@@ -255,3 +255,14 @@ footer a:hover {
 #cortesCarousel .carousel-control-next {
   padding: 0.25rem;
 }
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+.carousel-item {
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.btn-warning:hover {
+  background-color: #d39e00; /* más accesible que #e0a800 */
+}
