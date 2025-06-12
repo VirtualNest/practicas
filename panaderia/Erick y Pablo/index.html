@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panadería El Triguero | Pan artesanal hecho con amor</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Panadería El Triguero - Pan artesanal, ingredientes de calidad y tradición en cada bocado. Visítanos o síguenos en redes sociales." />
+  <style>
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="nav-logo">
+        <a href="/" aria-label="Inicio">
+          <img src="img/logo.png" alt="Logo de Panadería El Triguero" />
+        </a>
+      </div>
+      <div class="nav-info">
+        <div class="telefono">
+          📞 <a href="tel:+1234567890">+1 234 567 890</a>
+        </div>
+        <div class="ubicacion">
+          📍 <a href="https://maps.app.goo.gl/8NRfDR2zdEeLJbFi9" target="_blank" rel="noopener noreferrer">Dónde estamos</a>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/panaderiaeltriguero" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Panadería El Triguero">
+            <img src="img/ins.png" alt="Síguenos en Instagram" />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero fade-in" aria-label="Imagen destacada">
+      <img src="img/img5.jpg" alt="Interior de la panadería con productos artesanales" class="hero-img" />
+      <p class="slogan">Pan artesanal hecho con amor</p>
+    </section>
+
+    <section class="galeria fade-in">
+      <h2>Nuestros Panes</h2>
+      <div class="imagenes">
+        <img src="img/img1.png" alt="Pan de masa madre artesanal" />
+        <img src="img/img2.png" alt="Baguette recién horneada" />
+        <img src="img/img3.png" alt="Pan integral con semillas" />
+      </div>
+    </section>
+
+    <section class="horario fade-in">
+      <h2>Horario de Atención</h2>
+      <ul>
+        <li><strong>Lunes a Viernes:</strong> 7:00 – 14:30 / 17:00 - 20:00</li>
+        <li><strong>Sábados y Domingos:</strong> 8:00 – 14:00</li>
+      </ul>
+    </section>
+
+    <section class="contacto fade-in">
+      <h2>Visítanos</h2>
+      <p>
+        <a href="https://maps.app.goo.gl/8NRfDR2zdEeLJbFi9" target="_blank" rel="noopener noreferrer">
+          Ver ubicación en Google Maps
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Panadería El Triguero. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  fadeElements.forEach(el => appearOnScroll.observe(el));
+  document.querySelectorAll('.imagenes img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = 0;
+      overlay.style.left = 0;
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      overlay.style.display = 'flex';
+      overlay.style.justifyContent = 'center';
+      overlay.style.alignItems = 'center';
+      overlay.style.zIndex = 9999;
+
+      const imgClone = img.cloneNode();
+      imgClone.style.maxWidth = '90%';
+      imgClone.style.maxHeight = '90%';
+      imgClone.style.boxShadow = '0 0 20px rgba(255,255,255,0.4)';
+      imgClone.style.borderRadius = '8px';
+
+      overlay.appendChild(imgClone);
+      document.body.appendChild(overlay);
+
+      overlay.addEventListener('click', () => overlay.remove());
+    });
+  });
+</script>
+<script src="react.jsx"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* Variables de color */
+:root {
+  --bg-main: #FEFAEE;
+  --bg-alt: #f6e9d7;
+  --bg-footer: #fdf4e3;
+  --text-primary: #4a3e2c;
+  --text-heading: #6a5028;
+  --text-link: #6f4e37;
+  --text-link-hover: #a17c3d;
+  --font-main: 'Playfair Display', 'Segoe UI', sans-serif;
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+.slogan {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+/* Header */
+header {
+  background-color: var(--bg-main);
+  padding: 1.5rem 1rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.8rem 2rem;
+  border-bottom: 1px solid #e0d5c0;
+}
+
+.nav-logo img {
+  width: 120px;
+  max-height: 80px;
+  height: auto;
+}
+
+.nav-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  flex-wrap: wrap;
+}
+
+.nav-info > div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nav-info a {
+  color: var(--text-link);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-info a:hover {
+  color: var(--text-link-hover);
+}
+
+/* Instagram icon */
+.instagram img {
+  width: 26px;
+  height: 26px;
+  transition: filter 0.3s ease;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+.slogan {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+/* Galería */
+.galeria {
+  padding: 2rem 1rem;
+}
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.imagenes img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+  transform: scale(1.03);
+}
+
+/* Horario */
+.horario {
+  background-color: var(--bg-alt);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.horario ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Contacto */
+.contacto {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contacto a {
+  color: var(--text-link);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-footer);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5a4b3c;
+}
+
+/* Responsive navbar */
+@media (max-width: 700px) {
+  .navbar {
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav-logo img {
+    width: 100px;
+  }
+
+  .nav-info {
+    font-size: 0.95rem;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .instagram img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .slogan {
+    font-size: 2rem;
+    top: 35%;
+  }
+
+  .imagenes img {
+    width: 90%;
+    max-width: 300px;
+  }
+}
