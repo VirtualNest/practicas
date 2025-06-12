@@ -1,0 +1,115 @@
+:root {
+    --brown-color: #794e4b;
+    --light-creme-bg: #fbefe1;
+    --button-text-color: #371917;
+    --button-bg-color: #e8b87f;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+
+.custom-navbar {
+    background-color: #fbefe1;
+}
+
+.nav-link.text-brown {
+    color: var(--brown-color) !important;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero-section h2 {
+    color: var(--brown-color);
+    font-family: 'Georgia', serif;
+}
+
+.hero-section h1 {
+    font-family: 'Georgia', serif;
+    color: var(--brown-color);
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    .hero-section h1 {
+        font-size: 6rem;
+    }
+}
+
+.btn {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+}
+
+.btn:hover {
+    background-color: #d1a46f;
+}
+
+/* Sobre Nosotros */
+
+#sobre-nosotros {
+    background-color: var(--light-creme-bg);
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--brown-color);
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Productos */
+
+.carousel-container {
+    background-color: var(--light-creme-bg);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.carousel-title {
+    font-family: 'Georgia', serif;
+    color: var(--brown-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(38%) saturate(1223%) hue-rotate(353deg) brightness(94%) contrast(91%);
+}
+
+.productos-divider {
+    border: none;
+    border-top: 3px solid var(--brown-color);
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
